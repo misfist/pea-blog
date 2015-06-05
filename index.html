@@ -179,12 +179,12 @@
     <script type="text/template" id="postTemplate">
       <header class="post-header">
         <h2 class="post-title">
-          <a href="#"><%= title %></a>
+          <a href="<%= link %>"><%= title %></a>
         </h2>
-        <p class="lead post-meta">
-          by <a href="#"><%= author.name %></a>
-        </p>
-        <p class="post-meta"><span class="glyphicon glyphicon-time"></span> Posted on <time><% print ( new Date(date) ) %></time></p>
+        <div class="post-meta">
+          <p class="lead post-meta">by <a href="#"><%= author.name %></a></p>
+          <span class="glyphicon glyphicon-time"></span> Posted on <time><% print ( new Date(date) ) %></time>
+        </div>
         <hr>
         <div class="post-thumbnail"><img class="img-responsive" src="http://placehold.it/900x300" alt=""></div>
         <hr>
@@ -194,8 +194,8 @@
         <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
       </div>
       <footer class="post-footer"><hr></footer>
-  </script>
-
+   </script>
+  
     <!-- jQuery -->
 <!--    <script src="/lib/js/jquery.js"></script>-->
   
