@@ -1,0 +1,6 @@
+*.log
+.DS_Store
+*.bak
+*.zip
+*.tar
+*.sass-cache

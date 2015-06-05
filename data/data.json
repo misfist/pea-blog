@@ -1,0 +1,1231 @@
+
+
+[
+  {
+    "ID": 1558,
+    "title": "Austin&#8217;s check-in for 6.2.15",
+    "status": "publish",
+    "type": "post",
+    "author": {
+      "ID": 2,
+      "username": "austin",
+      "name": "Austin",
+      "first_name": "Austin",
+      "last_name": "",
+      "nickname": "austin",
+      "slug": "austin",
+      "URL": "",
+      "avatar": "http:\/\/1.gravatar.com\/avatar\/4aa3e7801814bc5ed3a625cd82d6c3ac?s=96",
+      "description": "",
+      "registered": "2015-03-18T07:00:13+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2\/posts"
+        }
+      }
+    },
+    "content": "<h1>Did Last Week<\/h1>\n<h2>LittleSis<\/h2>\n<ul>\n<li>Showed Matthew how React works<\/li>\n<li>Got working prototype of map display page (from live LS data) in React up and running\n<ul>\n<li><a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/tree\/ec46cbd33be20cc6ed9287e55b2afc6d04e096ab\" target=\"_blank\"  rel=\"nofollow\" >code<\/a> \/ <a href=\"http:\/\/badideafactory.net\/img\/screenshare\/mitchell_map_prototype.png\" target=\"_blank\"  rel=\"nofollow\" >screenshot<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/ec46cbd33be20cc6ed9287e55b2afc6d04e096ab\/app\/components\/Node.jsx\" target=\"_blank\"  rel=\"nofollow\" >Renders SVG directly &#8212; including draggable nodes!<\/a> (no use of D3 yet)<\/li>\n<li>Allows adding nodes from the search bar<\/li>\n<\/ul>\n<\/li>\n<li>Refactored and moved to <a href=\"http:\/\/martyjs.org\/\" target=\"_blank\"  rel=\"nofollow\" >Marty.js<\/a> (a Flux implementation)\n<ul>\n<li><a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/tree\/marty_refactor\" target=\"_blank\"  rel=\"nofollow\" >refactored branch<\/a><\/li>\n<li>I LOVE MARTY.JS: makes data flow and state extremely easy to reason about<\/li>\n<li>a couple examples of this flow (for tim to get excited about):<\/li>\n<li><a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/marty_refactor\/app\/actions\/EntitySearchActions.js\" target=\"_blank\"  rel=\"nofollow\" >search actions<\/a> ->  <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/marty_refactor\/app\/stores\/EntitySearchStore.js\" target=\"_blank\"  rel=\"nofollow\" >search store<\/a> &#8211;> <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/marty_refactor\/app\/components\/SearchResults.jsx\" target=\"_blank\"  rel=\"nofollow\" >search results component<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/marty_refactor\/app\/actions\/GraphActions.js\" target=\"_blank\"  rel=\"nofollow\" >graph actions<\/a> &#8211;> <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/marty_refactor\/app\/stores\/GraphStore.js\" target=\"_blank\"  rel=\"nofollow\" >graph store<\/a> &#8211;> <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/marty_refactor\/app\/components\/Graph.jsx\" target=\"_blank\"  rel=\"nofollow\" >graph component<\/a><\/li>\n<li>note that the notion of a dispatcher allows the search results store to <em>also<\/em> listen to the <code>addNode<\/code> action creator. so that one function call dispatches two actions that have impact on two stores and two components<\/li>\n<li>and look at the code cleanup! from <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/ec46cbd33be20cc6ed9287e55b2afc6d04e096ab\/app\/main.jsx\" target=\"_blank\"  rel=\"nofollow\" >this<\/a> to <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/marty_refactor\/app\/components\/Root.jsx\" target=\"_blank\"  rel=\"nofollow\" >this<\/a> in my root component! (the one remaining method is left as an exercise for Matthew to get rid of)<\/li>\n<li>left one bit for Matthew to refactor to get the lay of the land (continuing the trend of trying to offer ways into new ideas by code walking a bit, then letting him touch it a bit himself)<\/li>\n<\/ul>\n<\/li>\n<li>Brainstormed ways to &#8220;go big&#8221; in support of Flood the System escalation\n<ul>\n<li>came across great <a href=\"http:\/\/angelsoftheright.net\/\" target=\"_blank\"  rel=\"nofollow\" >&#8220;walking tour&#8221;<\/a> model I&#8217;d like to repurpose for an interactive &#8220;tour&#8221; of our maps<\/li>\n<\/ul>\n<\/li>\n<\/ul>\n<h2>Where@<\/h2>\n<ul>\n<li>Amanda agreed to help with the project\n<ul>\n<li>We&#8217;re going to meet for 4 hours once a week to pair and do side work on our own as necessary<\/li>\n<li>Amanda can&#8217;t commit to a regular weeknight time, so we&#8217;re going to start with Saturday sessions<\/li>\n<li>Might move this to a &#8220;guest appearance&#8221; at our hack night if that&#8217;s okay with the group<\/li>\n<li>Might be a nice way to gradually introduce her to the group<\/li>\n<\/ul>\n<\/li>\n<\/ul>\n<h2>Misc<\/h2>\n<ul>\n<li>read this cool guide on <a href=\"http:\/\/www.christianalfoni.com\/articles\/2014_12_13_Webpack-and-react-is-awesome\" target=\"_blank\"  rel=\"nofollow\" >webpack<\/a><\/li>\n<li>read these <a href=\"http:\/\/www.html5rocks.com\/en\/tutorials\/es6\/promises\/\" target=\"_blank\"  rel=\"nofollow\" >two<\/a> cool <a href=\"https:\/\/www.promisejs.org\/generators\/\" target=\"_blank\"  rel=\"nofollow\" >posts<\/a> on es6 promises<\/li>\n<li>re-watched this <a href=\"https:\/\/www.youtube.com\/watch?v=IyNPeTn8fpo\" target=\"_blank\"  rel=\"nofollow\" >great talk on agile<\/a><\/li>\n<li>started reading\/watching <a href=\"http:\/\/worrydream.com\/\" target=\"_blank\"  rel=\"nofollow\" >Brett Victor<\/a> on &#8220;interactive argument&#8221;<\/li>\n<\/ul>\n<h1>Goals for Next Week<\/h1>\n<h2>LittleSis<\/h2>\n<ul>\n<li>Set and execute first user stories for map display pages\n<ul>\n<li>live swap 2-3 maps<\/li>\n<li>pull in design niceties from jQuery version<\/li>\n<li>introduce narrative &#8220;walking tour&#8221; element<\/li>\n<\/ul>\n<\/li>\n<li>Solidify Marty framework<\/li>\n<li>Put testing framework in place\n<ul>\n<li>curious about <a href=\"http:\/\/karma-runner.github.io\/0.12\/intro\/how-it-works.html\" target=\"_blank\"  rel=\"nofollow\" >karma<\/a><\/li>\n<li>Develop &#8220;go big&#8221; value propositions and funding opportunties<\/li>\n<\/ul>\n<\/li>\n<\/ul>\n<h2>Where@<\/h2>\n<ul>\n<li>Onboard Amanda (tooling setup and code walk)<\/li>\n<li>Condense questions about Macroid into email to its author<\/li>\n<li>Reignite momentum behind effort to update robospecs<\/li>\n<li>Begin to impement:\n<ul>\n<li>Persistent storage of text recipient groups<\/li>\n<li>Persistent storage of celly cells<\/li>\n<li>Input forms, incl. option to add message(?)<\/li>\n<\/ul>\n<\/li>\n<\/ul>\n<h1>Questions<\/h1>\n<h2>JS Build Tools<\/h2>\n<p>Reiterating from last week (as I&#8217;m still curious and think it might benefit the group to do something of a deep dive on this):<\/p>\n<ul>\n<li>How does webpack work?<\/li>\n<li>What core problem is it trying to solve, and what strategies is it using to do so?<\/li>\n<li>On that subect: there are a dizzying number of JS build tools doing things I don&#8217;t really understand.<\/li>\n<li>I&#8217;m using webpack, but there&#8217;s also grunt, gulp, bower, browserify, etc&#8230;<\/li>\n<li>How does the strategies webpack is choosing differ from the ones used by the other systems. Why do they make the choices they make? What are the trade offs?<\/li>\n<li>Should I be using any of these other tools in addition to webpack? Why would I do that?<\/li>\n<\/ul>\n<h2>Data Viz in React<\/h2>\n<ul>\n<li>Still curious if we want to make React play with D3 and what the pros\/cons of this route or handrolling SVG all the way through might be<\/li>\n<li>Here are <a href=\"http:\/\/thelearningcollective.nyc\/react-resources\/#data-viz\" target=\"_blank\"  rel=\"nofollow\" >some links<\/a> I turned up on the subject<\/li>\n<li>Here is <a href=\"https:\/\/github.com\/reactjs\/react-art\" target=\"_blank\"  rel=\"nofollow\" >react-art<\/a> &#8212; a compelling(?)  attempt at a canvass-rendering library for React (FB blog seems to really like it, FWIW)<\/li>\n<\/ul>\n<h2>Graph Representations: Graph Theory v. Graph Display (?)<\/h2>\n<p>For the purposes of displaying our relationship maps, we&#8217;ve settled on a <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/marty_refactor\/app\/models\/Graph.js\" target=\"_blank\"  rel=\"nofollow\" >representation of graphs<\/a> that is far afield from what I&#8217;d use in graph algorithms. Namely, we are representing graphs as two hash maps: (1) a map of node ids to nodes and their adjacencies and (2) a map of edge ids to edges and their contents (ie: labels)<\/p>\n<p>I wanted something more akin to what I&#8217;d used for my graph algos (a simple set of nodes and their adjacency lists without key value pairs or any representation of a collection of edges &#8212; since the latter can be inferred from the former, and in any case isn&#8217;t normally necessary for most graph algos)<\/p>\n<p>We wound up settling on maintaining a map of nodes and a map of edges for reasons that reduce to the underlying argument (which I accepted) that the structural requirements for displaying and modifying a graph are slightly different than those for running computations on it. More specifically, when displaying and modifying a graph, we have to assume some sort of &#8220;outside perspective&#8221; from which we want to be able to quickly retrieve any given node without having to traverse the whole graph to find it. When thinking in terms of &#8220;graph theory&#8221; or graph algorithms, I can safely assume I&#8217;ve already constructed the graph I want, and any information about the graph that is of interest to me can be inferred inductively. In the former case, I want to have keys with fast lookup of the node itself (much like indexes on a DB), wheras in the later, these become unnecessary, and in fact create a lot of indirection.<\/p>\n<p>Again, I wanted to not have ID lookups and not maintain a list of edges. Here were two use cases that I couldn&#8217;t solve without using them:<\/p>\n<ol>\n<li><strong>ID Lookups<\/strong>: A user is looking at a map of the biggest realtors in NYC. They want to add a new realtor, Bob, and connect him to an existing realtor, Alice, who is already on the graph. On the backend, we already have knowledge of the database IDs for both Alice and Bob, because we used them to display the links and other resources that the user is manipulating to view and alter the graph. If we use ID&#8217;s, I can look up the node that corresponds to Alice in the graph in constant time and add Bob to her adjacency list. If we don&#8217;t have ID&#8217;s, I have to first traverse the entire graph to find Alice, which would take O(n+e) where <code>n<\/code> is the number of nodes in the graph and <code>e<\/code> is the number of edges. NO CONTEST right?<\/li>\n<li><strong>Edge List<\/strong>: In order to display the graph, we need to pass information about all of its edges to React (and constantly refresh this list as nodes are dragged around). If all we were interested in was displaying them once, we could simply run a bread-first-search that accumulated a list of edges and pass that down to our views. This would be okay, but less fast than had we simply stored that list in the first place (since again, BFS runs in O(e+v)). But let&#8217;s return to our prior example. When the user adds Bob to the graph viz, instead of just doing a constant-time append of one edge to a list of edges and then only rendering that new edge, we have to (or at least I can&#8217;t think of a way we can&#8217;t) regenerate the edge list from scratch through BFS and massively increase the run time of what should sensibly be a very fast operation.<\/li>\n<\/ol>\n<p>I tried as hard as I could to figure out a way to get out of these binds while remaining true to the no-IDs, no-edge-list representation that served me well with graph algos. And for the life of me I can&#8217;t find one. So my questions are:<\/p>\n<ol>\n<li>Is there a way out I&#8217;m not seeing?<\/li>\n<li>Is it perhaps wise to accept that the imperatives of graph display and graph computation are <em>different<\/em> and &#8212; far from trying to impose the latter on the former &#8212; keep a representation that is optimized <em>only<\/em> for the former (and, as such, probably wouldn&#8217;t maintain adjacency lists: just a collection of nodes and edges), and then <em>when we need or want to conduct graph computations<\/em>, construct an algorithm-optimized (id-less, edge-list-less) representation by inference from our display-optimized representation? In other words: if one representation can be inferred from the other, perhaps it&#8217;s okay to keep one on hand for the use it&#8217;s best suited for, and whip up the other when a use it&#8217;s suited for arises. And if our primary use is display, we should starte with that. <strong>Does that make any sense?<\/strong><\/li>\n<\/ol>\n",
+    "parent": null,
+    "link": "http:\/\/dev.thelearningcollective.nyc\/austins-check-in-for-6-2-15\/",
+    "date": "2015-05-31T19:58:17",
+    "modified": "2015-05-31T19:58:17",
+    "format": "standard",
+    "slug": "austins-check-in-for-6-2-15",
+    "guid": "http:\/\/thelearningcollective.nyc\/?p=1558",
+    "excerpt": "<p>Did Last Week LittleSis Showed Matthew how React works Got working prototype of map display page (from live LS data) in React up and running code \/ screenshot Renders SVG directly &#8212; including draggable nodes! (no use of D3 yet)&hellip; <a href=\"http:\/\/dev.thelearningcollective.nyc\/austins-check-in-for-6-2-15\/\" class=\"more-link\">Continue Reading <span class=\"meta-nav\">&rarr;<\/span><\/a><\/p>\n",
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "date_tz": "Etc\/GMT-5",
+    "date_gmt": "2015-06-01T00:58:17",
+    "modified_tz": "Etc\/GMT-5",
+    "modified_gmt": "2015-06-01T00:58:17",
+    "meta": {
+      "links": {
+        "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1558",
+        "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2",
+        "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts",
+        "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1558\/comments",
+        "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1558\/revisions"
+      }
+    },
+    "featured_image": null,
+    "terms": {
+      "category": [
+        {
+          "ID": 1,
+          "name": "Check-ins",
+          "slug": "check-ins",
+          "description": "",
+          "taxonomy": "category",
+          "parent": null,
+          "count": 31,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/category\/check-ins\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms\/1"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": 1562,
+    "title": "Pea&#8217;s Check-in for 6\/2\/2015 &#8211; Getting Backbone",
+    "status": "publish",
+    "type": "post",
+    "author": {
+      "ID": 1,
+      "username": "misfist",
+      "name": "Pea",
+      "first_name": "",
+      "last_name": "",
+      "nickname": "Pea",
+      "slug": "misfist",
+      "URL": "",
+      "avatar": "http:\/\/1.gravatar.com\/avatar\/4c88de43757cff8eeed24564f5729541?s=96",
+      "description": "",
+      "registered": "2015-03-18T04:54:16+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1\/posts"
+        }
+      }
+    },
+    "content": "<h2>What I did<\/h2>\n<p>I worked through some Backbone tutorials in order to get enough familiarity to begin my blog project. I then began planning out the blog.<\/p>\n<h2>What I learned<\/h2>\n<h3>Views<\/h3>\n<p>&#8220;Backbone\u2019s Views are the equivalent of \u2018controllers\u2019 on MVC frameworks&#8221;<br \/>\n<a href=\"http:\/\/adrianmejia.com\/blog\/2012\/09\/11\/backbone-dot-js-for-absolute-beginners-getting-started\/#start\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/adrianmejia.com\/blog\/2012\/09\/11\/backbone-dot-js-for-absolute-beginners-getting-started\/#start<\/a><\/p>\n<p>There are 4 basic properties in a view:<\/p>\n<p>{<br \/>\n    el,<br \/>\n    initialize,<br \/>\n    render,<br \/>\n    events<br \/>\n}<\/p>\n<h4><code>el<\/code><\/h4>\n<p><code>this.el<\/code> is created from <code>el<\/code>, <code>tagName<\/code>, <code>className<\/code>, <code>id<\/code> or <code>attributes<\/code> properties.<\/p>\n<p>If none is specified, then <code>this.el<\/code> is an empty div. <code>view.$el<\/code> it a cached jQuery object of the view\u2019s element (<code>view.el<\/code>).<\/p>\n<h4><code>event<\/code><\/h4>\n<p>Events are written in the form:<\/p>\n<p><code>{'&lt;EVENT TYPE&gt; &lt;ELEMENT ID&gt;': '&lt;CALLBACK FUNCTION&gt;'};<\/code><\/p>\n<pre><code>event: {'keypress #new-todo': 'createTodoOnEnter'};\n<\/code><\/pre>\n<h5>JQuery Equivalent<\/h5>\n<pre><code>$('#new-todo').keypress(createTodoOnEnter);\n<\/code><\/pre>\n<h3>Models<\/h3>\n<p>I&#8217;m thinking of them like a class. Is there any reason not to?<\/p>\n<pre><code>\/\/Data\n{\n  \"total\": 2,\n  \"page\": 1,\n  \"perPage\": 10,\n  \"jedis\": [\n    {\n      \"id\": 1,\n      \"name\": \"Obi-Wan Kenobi\",\n      \"homeworld\": \"Stewjon\",\n      \"apprentices\": [\n        \"Anakin Skywalker\",\n        \"Luke Skywalker\"\n      ]\n    },\n    {\n      \"id\": 2,\n      \"name\": \"Qui-Gon Jinn\",\n      \"homeworld\": \"unknown\",\n      \"apprentices\": [\n        \"Xanatos\",\n        \"Obi-Wan Kenobi\"\n      ]\n    }\n  ]\n}\n<\/code><\/pre>\n<p>Not sure why you&#8217;d create a model for a single record in the dataset (document in the collection), but<\/p>\n<pre><code>\/\/Obi-Wan Model\nvar ObiWanModel = Backbone.Model.extend({\n  url: \"jedis\/1\",\n  defaults: {\n    id: null,\n    name: null,\n    homeworld: null,\n    apprentices: null\n  }\n});\n\n\/\/New Instance\nvar jedi = new ObiWanModel();\n\njedi.fetch().then(function() {\n  jedi.get('name');\n  jedi.get('apprentices');\n  jedi.set('apprentices', 'Ferus Olin');\n});\n<\/code><\/pre>\n<p>To define a model, use backbone <code>extend<\/code>.<\/p>\n<pre><code>var JediModel = Backbone.Model.extend({\n  defaults: {\n    id: null,\n    name: null,\n    homeworld: null,\n    appreciates: null\n  }\n});\n\nvar MasterJediModel = JediModel.extend();\n<\/code><\/pre>\n<p>This returns a constructor function.<\/p>\n<p>To use it, it needs to be instantiated using the new keyword<\/p>\n<pre><code>var jarusOdin = new jediModel(\n    name: \"Jarus Odin\",        \n);\n\nvar JediCollection = Backbone.Collection.extend({\n  url: \"\/jedis\",\n  model: JediModel\n});\n\nvar jedis = new JediCollection();\n\njedis.fetch().then(function() {\n  console.log(jedis.length);\n});\n<\/code><\/pre>\n<h2>Samples<\/h2>\n<h3>To-do App<\/h3>\n<h4>Mark-up<\/h4>\n<pre><code>&lt;main id=\"todoapp\"&gt;\n  &lt;header id=\"header\"&gt;\n    &lt;h1&gt;Todos&lt;\/h1&gt;\n    &lt;input id=\"new-todo\" placeholder=\"What do you need to do?\"&gt;\n  &lt;\/header&gt;\n  &lt;section id=\"main\"&gt;\n    &lt;ul id=\"todo-list\"&gt;&lt;\/ul&gt;\n  &lt;\/section&gt;\n&lt;\/main&gt;\n<\/code><\/pre>\n<h4>Templates<\/h4>\n<pre><code><!-- Templates -->\n&lt;script type=\"text\/template\" id=\"item-template\"&gt;\n  &lt;div class=\"view\"&gt;\n    &lt;input class=\"toggle\" type=\"checkbox\"&gt;\n    &lt;label&gt;&lt;%- title %&gt;&lt;\/label&gt;\n  &lt;\/div&gt;\n&lt;\/script&gt;  \n<\/code><\/pre>\n<h4>Code<\/h4>\n<pre><code>'use strict';\nvar app = {}; \/\/ create namespace for our app\n<\/code><\/pre>\n<h4>Models<\/h4>\n<pre><code>\/\/--------------\n\/\/ Models\n\/\/--------------\napp.TodoModel = Backbone.Model.extend({\n  defaults: {\n    \/\/ Example uses empty string, but, I used null. Any reason not to?\n    title: null,\n    completed: false\n  }\n});\n<\/code><\/pre>\n<h4>Collections<\/h4>\n<pre><code>\/\/--------------\n\/\/ Collections\n\/\/--------------\napp.TodoList = Backbone.Collection.extend({\n  model: app.TodoModel,\n  localStorage: new Store(\"backbone-todo\")\n  \/\/ `Use localStorage.clear()` to clear\n});\n\/\/ instance of the Collection\napp.todoList = new app.TodoList();\n<\/code><\/pre>\n<h4>Views<\/h4>\n<pre><code>\/\/--------------\n\/\/ Views\n\/\/--------------\n\n\/\/ renders individual todo items list (li)\napp.TodoView = Backbone.View.extend({\n  tagName: 'li',\n  \/\/Note the use of `tagName: li` instead of the just `el` like before. This means that the elements will be wrapped around a &lt;li&gt;&lt;\/li&gt;\n  template: _.template($('#item-template').html()),\n  render: function(){\n    this.$el.html( this.template( this.model.toJSON() ) );\n    return this; \/\/ enable chained calls\n   \/\/ Views can receive any parameter needed when they're instanciated. Here, we use model, so it needs to instanciated with model (e.g. todo):\n  }\n});\n\n\/\/ renders the full list of todo items calling TodoView for each one.\n\/\/This view has no render property. Why?\napp.AppView = Backbone.View.extend({\n  el: '#todoapp',\n  initialize: function () {\n    this.input = this.$('#new-todo');\n    app.todoList.on('add', this.addAll, this);\n    app.todoList.on('reset', this.addAll, this);\n    app.todoList.fetch(); \/\/ Loads list from local storage\n  },\n  events: {\n    'keypress #new-todo': 'createTodoOnEnter'\n  },\n  createTodoOnEnter: function(e){\n    \/\/ Apparently key 13 is enter (is that always true?)\n    if ( e.which !== 13 || !this.input.val().trim() ) { \/\/ ENTER_KEY = 13\n      \/\/ Does this just mean stop or do nothing?\n      return;\n    }\n    app.todoList.create( this.newAttributes() );\n    this.input.val(''); \/\/ clean input box\n  },\n<\/code><\/pre>\n<p>\/\/ Why is what is this todo argument. What is assigned to it? Where is it used?<\/p>\n<pre><code>  addOne: function(todo){\n    \/\/ Argument is named same as model instance todo. It's not actually referencing that, right? Why do I still get confused about what is used as an argument when a function is called?\n    \/\/ Is this using the value of the todo argument? If so, why? Doesn't this function have access to the variable todo already?\n    var view = new app.TodoView({model: todo});\n    $('#todo-list').append(view.render().el);\n  },\n  addAll: function(){\n    this.$('#todo-list').html(''); \/\/ clean the todo list\n    app.todoList.each(this.addOne, this);\n  },\n  newAttributes: function(){\n    return {\n      title: this.input.val().trim()\n    }\n  }\n});\n\n\/\/--------------\n\/\/ Initializers\n\/\/--------------   \napp.appView = new app.AppView();\n<\/code><\/pre>\n<h2>Blog<\/h2>\n<p>I&#8217;m building a blog using Backbone.js<\/p>\n<p>So far, I&#8217;ve only mapped out the basic data and structure.<\/p>\n<h3>Prioritized Features<\/h3>\n<ol>\n<li>Display List of Blog Posts<\/li>\n<li>Link to and Display Individual Blog Post<\/li>\n<li>Create a New Post<\/li>\n<\/ol>\n<h3>Structure<\/h3>\n<h4>Data<\/h4>\n<p>Use existing data at: <a href=\"http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/\">http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/ <\/a><\/p>\n<ul>\n<li>Will eliminate need to set up RESTful app<\/li>\n<li>Use the WordPress REST API<\/li>\n<\/ul>\n<h4>Models<\/h4>\n<ul>\n<li>Post Model<\/li>\n<\/ul>\n<h4>Collections<\/h4>\n<ul>\n<li>Posts Collection<\/li>\n<\/ul>\n<h4>Views<\/h4>\n<ul>\n<li>Post View<\/li>\n<li>Post List<\/li>\n<\/ul>\n<h3>Data Format<\/h3>\n<pre><code>\"ID\": 1552,\n\"title\": \"Getting Some REST and Sending Requests with AJAX\",\n\"status\": \"publish\",\n\"type\": \"post\",\n\"author\": {\n  \"ID\": 1,\n  \"username\": \"misfist\",\n  \"nickname\": \"Pea\",\n  \"slug\": \"misfist\",\n  \"URL\": \"\",\n  \"avatar\": \"http:\/\/1.gravatar.com\/avatar\/4c88de43757cff8eeed24564f5729541?s=96\",\n  \"meta\": {\n      \"links\": {\n          \"self\": \"http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1\",\n          \"archives\": \"http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1\/posts\"\n      }\n  }\n},\n\"content\": \"\",\n\"parent\": null,\n\"link\": \"http:\/\/dev.thelearningcollective.nyc\/getting-some-rest-and-sending-requests-with-ajax\/\",\n\"date\": \"2015-04-11T12:37:10\",\n\"modified\": \"2015-04-11T12:37:26\",\n\"format\": \"standard\",\n\"slug\": \"getting-some-rest-and-sending-requests-with-ajax\",\n\"excerpt\": \"\",\n\"featured_image\": null,\n<\/code><\/pre>\n<h3>Markup<\/h3>\n<pre><code>&lt;div id=\"container\"&gt;\n  &lt;main class=\"starter-template posts\"&gt;\n    &lt;h1&gt;Posts&lt;\/h1&gt;\n    &lt;section class=\"post-archive\"&gt;\n\n    &lt;\/section&gt;\n  &lt;\/main&gt;\n&lt;\/div&gt;\n<\/code><\/pre>\n<h3>Templates<\/h3>\n<pre><code>&lt;script type=\"text\/template\" id=\"post-template\"&gt;\n   &lt;article id=\"&lt;%= id %&gt;\" class=\"post\"&gt;\n    &lt;h2 class=\"post-title\"&gt;&lt;a ref=\"&lt;%= link %&gt;\"&gt;&lt;%= title %&gt;&lt;\/a&gt;&lt;\/h2&gt;\n    &lt;div class=\"post-meta\"&gt;&lt;%= modified %&gt;&lt;\/div&gt;\n    &lt;div class=\"post-content\"&gt;&lt;%= title %&gt;&lt;\/div&gt;\n  &lt;\/article&gt;\n&lt;\/script&gt;\n<\/code><\/pre>\n<h3>Models<\/h3>\n<pre><code>var PostModel = Backbone.Model.extend({\n  defaults: {\n    ID: '',\n    title: null,\n    status: 'publish',\n    type: 'post',\n    author: {\n      ID: null,\n      username: null,\n      nickname: null,\n      slug: null,\n      avatar: null,\n    },\n    content: null,\n    parent: null,\n    link: null,\n    date: null,\n    modified: null,\n    format: 'standard',\n    slug: null,\n    excerpt: null,\n    featured_image: null,\n  },\n  idAttribute: 'ID',\n  urlRoot: 'http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/'\n});\n<\/code><\/pre>\n<h3>Views<\/h3>\n<pre><code>var PostView = Backbone.View.extend({\n  el: '#post-list',\n  tagName: 'li',\n  \/\/Figure out how to assign a class to li tag based on post id\n  template: _.template( $('#post-template').html() ),\n  render: function() {\n    this.$el.html( this.template( this.model.toJSON() ) );\n    return this;\n  },\n});\n\nvar postView = new PostView();\n<\/code><\/pre>\n<h3>Collections<\/h3>\n<pre><code>var PostList = Backbone.Collection.extend({\n  model: PostModel\n});\n\nvar posts = new PostList();\n<\/code><\/pre>\n<h2>Next Up<\/h2>\n<ul>\n<li>Continue work on blog.<\/li>\n<\/ul>\n",
+    "parent": null,
+    "link": "http:\/\/dev.thelearningcollective.nyc\/peas-check-in-for-622015-getting-backbone\/",
+    "date": "2015-05-31T19:45:14",
+    "modified": "2015-06-04T20:35:44",
+    "format": "standard",
+    "slug": "peas-check-in-for-622015-getting-backbone",
+    "guid": "http:\/\/thelearningcollective.nyc\/?p=1553",
+    "excerpt": "<p>What I did I worked through some Backbone tutorials in order to get enough familiarity to begin my blog project. I then began planning out the blog. What I learned Views &#8220;Backbone\u2019s Views are the equivalent of \u2018controllers\u2019 on MVC&hellip; <a href=\"http:\/\/dev.thelearningcollective.nyc\/peas-check-in-for-622015-getting-backbone\/\" class=\"more-link\">Continue Reading <span class=\"meta-nav\">&rarr;<\/span><\/a><\/p>\n",
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "date_tz": "Etc\/GMT-5",
+    "date_gmt": "2015-06-01T00:45:14",
+    "modified_tz": "Etc\/GMT-5",
+    "modified_gmt": "2015-06-05T01:35:44",
+    "meta": {
+      "links": {
+        "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1562",
+        "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+        "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts",
+        "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1562\/comments",
+        "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1562\/revisions"
+      }
+    },
+    "featured_image": {
+      "ID": 1565,
+      "title": "spine__backbone_by_reinisgailitis-d5rymus-e1433119577342",
+      "status": "inherit",
+      "type": "attachment",
+      "author": {
+        "ID": 1,
+        "username": "misfist",
+        "name": "Pea",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "Pea",
+        "slug": "misfist",
+        "URL": "",
+        "avatar": "http:\/\/1.gravatar.com\/avatar\/4c88de43757cff8eeed24564f5729541?s=96",
+        "description": "",
+        "registered": "2015-03-18T04:54:16+00:00",
+        "meta": {
+          "links": {
+            "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+            "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1\/posts"
+          }
+        }
+      },
+      "content": "<p class=\"attachment\"><a href='http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/spine__backbone_by_reinisgailitis-d5rymus-e1433119577342.jpg'><img width=\"277\" height=\"300\" src=\"http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/spine__backbone_by_reinisgailitis-d5rymus-e1433119577342-277x300.jpg\" class=\"attachment-medium\" alt=\"spine__backbone_by_reinisgailitis-d5rymus-e1433119577342\" \/><\/a><\/p>\n",
+      "parent": 1562,
+      "link": "http:\/\/dev.thelearningcollective.nyc\/peas-check-in-for-622015-getting-backbone\/spine__backbone_by_reinisgailitis-d5rymus-e1433119577342\/#main",
+      "date": "2015-06-04T20:35:37",
+      "modified": "2015-06-04T20:35:37",
+      "format": "standard",
+      "slug": "spine__backbone_by_reinisgailitis-d5rymus-e1433119577342",
+      "guid": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/spine__backbone_by_reinisgailitis-d5rymus-e1433119577342.jpg",
+      "excerpt": null,
+      "menu_order": 0,
+      "comment_status": "open",
+      "ping_status": "closed",
+      "sticky": false,
+      "date_tz": "Etc\/GMT-5",
+      "date_gmt": "2015-06-05T01:35:37",
+      "modified_tz": "Etc\/GMT-5",
+      "modified_gmt": "2015-06-05T01:35:37",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/media\/1565",
+          "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+          "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/media",
+          "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/media\/1565\/comments",
+          "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/media\/1565\/revisions",
+          "up": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/media\/1562"
+        }
+      },
+      "terms": [
+        
+      ],
+      "source": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/spine__backbone_by_reinisgailitis-d5rymus-e1433119577342.jpg",
+      "is_image": true,
+      "attachment_meta": {
+        "width": 780,
+        "height": 844,
+        "file": "2015\/05\/spine__backbone_by_reinisgailitis-d5rymus-e1433119577342.jpg",
+        "sizes": {
+          "thumbnail": {
+            "file": "spine__backbone_by_reinisgailitis-d5rymus-e1433119577342-150x150.jpg",
+            "width": 150,
+            "height": 150,
+            "mime-type": "image\/jpeg",
+            "url": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/spine__backbone_by_reinisgailitis-d5rymus-e1433119577342-150x150.jpg"
+          },
+          "medium": {
+            "file": "spine__backbone_by_reinisgailitis-d5rymus-e1433119577342-277x300.jpg",
+            "width": 277,
+            "height": 300,
+            "mime-type": "image\/jpeg",
+            "url": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/spine__backbone_by_reinisgailitis-d5rymus-e1433119577342-277x300.jpg"
+          },
+          "thumb-small": {
+            "file": "spine__backbone_by_reinisgailitis-d5rymus-e1433119577342-50x50.jpg",
+            "width": 50,
+            "height": 50,
+            "mime-type": "image\/jpeg",
+            "url": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/spine__backbone_by_reinisgailitis-d5rymus-e1433119577342-50x50.jpg"
+          },
+          "thumb-medium": {
+            "file": "spine__backbone_by_reinisgailitis-d5rymus-e1433119577342-300x135.jpg",
+            "width": 300,
+            "height": 135,
+            "mime-type": "image\/jpeg",
+            "url": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/spine__backbone_by_reinisgailitis-d5rymus-e1433119577342-300x135.jpg"
+          },
+          "thumb-featured": {
+            "file": "spine__backbone_by_reinisgailitis-d5rymus-e1433119577342-250x175.jpg",
+            "width": 250,
+            "height": 175,
+            "mime-type": "image\/jpeg",
+            "url": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/spine__backbone_by_reinisgailitis-d5rymus-e1433119577342-250x175.jpg"
+          }
+        },
+        "image_meta": {
+          "aperture": 0,
+          "credit": "",
+          "camera": "",
+          "caption": "",
+          "created_timestamp": 0,
+          "copyright": "",
+          "focal_length": 0,
+          "iso": 0,
+          "shutter_speed": 0,
+          "title": "",
+          "orientation": 0
+        }
+      }
+    },
+    "terms": {
+      "post_tag": [
+        {
+          "ID": 46,
+          "name": "Backbone",
+          "slug": "backbone",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 1,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/backbone\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/46"
+            }
+          }
+        },
+        {
+          "ID": 3,
+          "name": "Javascript",
+          "slug": "javascript",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 14,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/javascript\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/3"
+            }
+          }
+        }
+      ],
+      "category": [
+        {
+          "ID": 1,
+          "name": "Check-ins",
+          "slug": "check-ins",
+          "description": "",
+          "taxonomy": "category",
+          "parent": null,
+          "count": 31,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/category\/check-ins\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms\/1"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": 1531,
+    "title": "Austin&#8217;s Check-in for 5.27.15",
+    "status": "publish",
+    "type": "post",
+    "author": {
+      "ID": 2,
+      "username": "austin",
+      "name": "Austin",
+      "first_name": "Austin",
+      "last_name": "",
+      "nickname": "austin",
+      "slug": "austin",
+      "URL": "",
+      "avatar": "http:\/\/1.gravatar.com\/avatar\/4aa3e7801814bc5ed3a625cd82d6c3ac?s=96",
+      "description": "",
+      "registered": "2015-03-18T07:00:13+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2\/posts"
+        }
+      }
+    },
+    "content": "<h1>Did Last Week<\/h1>\n<h2>Moved to front-end<\/h2>\n<p>As I shared a bit at our last session, I hit a real roadblock in the efforts to apply the &#8220;test-a-little-bit-as-you-go&#8221; approach proscribed by <strong>Working With Legacy Code<\/strong>. More specifically, I set out to write a few unit tests that covered <em>only<\/em> the most recent feature we had just added to the site (<a href=\"http:\/\/littlesis.org\/topics\/fracking\" target=\"_blank\"  rel=\"nofollow\" >a topic page on fracking<\/a>) &#8212; so that we could safely apply refactors without worrying about breaking things. To my display, I found it was impossible to do this simple task without getting drawn into a days-battle with a code tangle that I might not be able to untangle and which would be more or less completely invisible to our users.<\/p>\n<p>Namely: to write <em>any<\/em> unit tests for the controller actions for the topics page, I had to stub authentication. But to stub authentication, I had to understand how authentication is currently being split between the PHP app and the Rails app, and learn about 2 different models of user &#8212; user (used by rails), sf_guard_user (used by symfony) &#8212; each with their own 3 tiered nesting of submodoels and 5-tiered permissions system that I&#8217;d have to stub out in order to stub the user, which I&#8217;d have to do to mock authentication, which I have to do in order to even <em>start<\/em> writing the tests for the thing we just wrote.<\/p>\n<p>After grabbing my vorpal sword an beginning to hack, I pretty quickly realized it would take me several days to even get past the starting line (which at our budget, is my entire work week), that I would be costing us money we don&#8217;t have for work that&#8217;s not adding anything new and visible to the site, and that it would have the opposite effect than the one that I was trying for: namely, to give me an empowering experience of biting off a small corner of the code that I could call my own. So I pivoted.<\/p>\n<p>I decided to shit <em>all<\/em> of my focus for the duration of my contract to an area where I feel like I can write well-structured code that I like and own and can leave in good shape for those who come behind. So I stepped into the front-end.<\/p>\n<p>(The fact that I had to do this pivot is a bit worrisome as regards the long-term viability of trying to &#8220;rescue&#8221; the legacy code base given the mismatch between its complexity and needs on the one hand and my current skill level and our current budget &#8212; which might very well dry up at the end of my contract &#8212; on the other, but that&#8217;s another discussion.)<\/p>\n<h1>Diving into React (the motivation)<\/h1>\n<p>Over the course of the week, I spent all three of my paid days and three unpaid days (recurring theme: worries about long-term viability!) making a proof-of concept page in React.  It&#8217;s a little toy one-page app called <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\" target=\"_blank\"  rel=\"nofollow\" >show me the money<\/a>. The idea of the page from a users&#8217;s perspective is to (1) provide a n00b with a page where they can visually walk around the LS data by searching for a name they know, then clicking on it and expaning the edges that connect it to other people and entities in the LS data set as they go.<\/p>\n<p>I wanted to replicate the <a href=\"http:\/\/littlesis.org\/maps\" target=\"_blank\"  rel=\"nofollow\" >static maps<\/a> that LS already has but let users dynamically build the map as a way of exploring the data, instead of only looking at pre-built maps consructed by expert researchers who already know what the connections are.<\/p>\n<p>We are probably only going to use static maps in the fracking site, and Matthew already has a lot of <a href=\"https:\/\/github.com\/skomputer\/lilsis\/blob\/329cbd7200d628feb46d8279c19a4dd60d9c1dc9\/app\/views\/maps\/_edit_controls.html.erb\" target=\"_blank\"  rel=\"nofollow\" >jQuery code<\/a> to do maps, so this might not make its way into anything we actually use, but it was a good foothold to try something out in React, because I think it can probably help us do this better, and at any rate related closely to a feature I&#8217;m very curious about, so made for a strongly motivated toy project.<\/p>\n<p>From a development team-management perspective, my main goal was to provide a vehicle for demonstrating to Matthew that React is easy to use (because I already learned it) and worth it (by giving me the raw materials for a code walk to show off its niceties). Additionally, I wanted to save us some time in an extremely cramped production timeline by tackling all the hard tooling questions and make most of the more difficult architecture\/shopping decisions ahead of time so we could hit the ground running at the top of the work week next week.<\/p>\n<p>And so I did a lot of work for free. Fortunately it was very interesting. At any rate&#8230;<\/p>\n<h2>What the app does<\/h2>\n<p>Pretty simple: a stand-alone node app that gets all its data by making HTTP requests to the LittleSis API. A user can use a search bar to search for a person or org in LittleSis. When the user clicks on a search result, that result gets added to a canvas that takes up most of the page, and the search results get cleared. You can add multiple elements. You cannot currently expand elements or connect them, though that&#8217;s where I want the mini-app to go.<\/p>\n<p><a href=\"http:\/\/badideafactory.net\/img\/show_me_the_money_screenshot.png\" target=\"_blank\"  rel=\"nofollow\" >Here&#8217;s a screenshot<\/a><\/p>\n<h2>What the app has<\/h2>\n<p>The page is simple but has a lot of cool stuff under the hood. For example, it:<\/p>\n<ul>\n<li>uses ES6 throughout<\/li>\n<li>has a cleanly-structured <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/master\/app\/api\/lsApi.js\" target=\"_blank\"  rel=\"nofollow\" >api client module<\/a> for interacting with LS&#8217;s API, that\n<ul>\n<li>uses superagent and ES6&#8217;s native Promises (SO COOL!!)<\/li>\n<li>the promsies allow for <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/master\/test\/lsApi_specs.js#L13-L15\" target=\"_blank\"  rel=\"nofollow\" >ridiculously fluent async tests<\/a> with Mocha and Chai (i&#8217;m never going back to callback hell!)<\/li>\n<\/ul>\n<\/li>\n<li>is dipping its toe into the waters of Facebook&#8217;s <a href=\"https:\/\/facebook.github.io\/immutable-js\/\" target=\"_blank\"  rel=\"nofollow\" >Immutable.js library<\/a> for data structures in <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/master\/app\/models\/Node.js#L7\" target=\"_blank\"  rel=\"nofollow\" >limited places<\/a> as a way of taking them for a spin for our main data stores<\/li>\n<li>demonstrates the way that component heirarchies work\n<ul>\n<li>it minimizes state to one place (<a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/master\/app\/main.jsx\" target=\"_blank\"  rel=\"nofollow\" >Main.jsx<\/a>) and passes props and event handlers to children that need them<\/li>\n<li>child components invoke event handlers to pass triggers for state changes back to the top of the heirarchy<\/li>\n<li>the resulting code is very compartmentalized and easy to reason about<\/li>\n<li>the threading is complex enough to demonstrate <a href=\"https:\/\/facebook.github.io\/react\/blog\/2013\/11\/05\/thinking-in-react.html\" target=\"_blank\"  rel=\"nofollow\" >&#8220;thinking in React&#8221;<\/a> but also to make an argument for why using an implementation of Flux that eliminates the need for all the threading is something we might want to do<\/li>\n<\/ul>\n<\/li>\n<li>uses webpack for a quick, seamless workflow<\/li>\n<li>integrates a <a href=\"https:\/\/github.com\/justin808\/bootstrap-sass-loader\" target=\"_blank\"  rel=\"nofollow\" >bootstrap-sass webpack loader<\/a> for modular sass includes, and quick adjustments to the layout (PEA: I FIGURED IT OUT!)<\/li>\n<\/ul>\n<h2>Things I learned about React<\/h2>\n<p>I read <strong>a ton of stuff<\/strong> about React and new-school Javascript over the week. I left a comprehensive breadcrumb trail of references <a href=\"github.com\/the-learning-collective\/whereat\" target=\"_blank\"  rel=\"nofollow\" >on the TLC site<\/a>, but the most exciting discoveries were:<\/p>\n<ul>\n<li>This great <a href=\"http:\/\/www.html5rocks.com\/en\/tutorials\/es6\/promises\/\" target=\"_blank\"  rel=\"nofollow\" >write-up of ES6&#8217;s Promises<\/a><\/li>\n<li>How to <a href=\"https:\/\/www.promisejs.org\/generators\/\" target=\"_blank\"  rel=\"nofollow\" >use Promises with generators<\/a> to escape callback hell<\/li>\n<li><a href=\"http:\/\/martyjs.org\/\" target=\"_blank\"  rel=\"nofollow\" >Marty.js<\/a>, which in addition to probably being the best implementation of <a href=\"https:\/\/facebook.github.io\/flux\/\" target=\"_blank\"  rel=\"nofollow\" >Flux<\/a> going right now, also has fantastic documentation &#8212; including <a href=\"http:\/\/martyjs.org\/guides\/flux\/index.html\" target=\"_blank\"  rel=\"nofollow\" >of how flux works<\/a>. Really helped me grock what the relationship between ActionCreators, Dispatchers, Stores, and Components is (and &#8212; additionally &#8212; excited about using immutable data structures in the Stores)<\/li>\n<li>This great <a href=\"https:\/\/speakerdeck.com\/jmorrell\/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1\" target=\"_blank\"  rel=\"nofollow\" >talk on flux<\/a><\/li>\n<li>This really useful <a href=\"https:\/\/christianalfoni.github.io\/react-webpack-cookbook\/\" target=\"_blank\"  rel=\"nofollow\" >webpack cookbook<\/a><\/li>\n<li>A ton of <a href=\"http:\/\/thelearningcollective.nyc\/react-resources\/#testing\" target=\"_blank\"  rel=\"nofollow\" >great articles on testing React apps<\/a>, which led me to believe that some sort of hand-rolled Mocha\/Chai\/Sinon approach is probably the most sound<\/li>\n<\/ul>\n<p>I didn&#8217;t have time to try out either Marty.js or the testing framework, and have left it as an exercise for the top of next week to do it with Matthew to help us find our way in to the React ecosystem together.<\/p>\n<h1>Goals For Next Week<\/h1>\n<h2>LittleSis<\/h2>\n<ul>\n<li>Implement <code>show-me-the-money<\/code> in Marty.js<\/li>\n<li>Figure out mocha tests for React apps and write tests for <em>everything<\/em><\/li>\n<li>Figure out how to deploy the app to Heroku<\/li>\n<li>Use this template to write code for a map we actually want to use in the fracking site\n<ul>\n<li>will involve solving how to replace or work with d3 in a React context<\/li>\n<\/ul>\n<\/li>\n<\/ul>\n<h2>Wher@<\/h2>\n<ul>\n<li>Add multiple user-texting, message appending, and the ability to specify which celly channels to broadcast to (if using celly)<\/li>\n<li>Meet with users<\/li>\n<li>Meet with Amanda about helping me code it<\/li>\n<li>Write the author of Macroid about my questions about the library<\/li>\n<li>Write the author of robospecs about progress updating the library, and (hopefully) USE IT!<\/li>\n<\/ul>\n<h2>Algos<\/h2>\n<ul>\n<li>Get back on the algos train in case I need to interview again soon (might need to)<\/li>\n<\/ul>\n<h1>Questions:<\/h1>\n<p><strong>JS Build Tools<\/strong><\/p>\n<ul>\n<li>How does webpack work?<\/li>\n<li>What core problem is it trying to solve, and what strategies is it using to do so?<\/li>\n<li>On that subect: there are a dizzying number of JS build tools doing things I don&#8217;t really understand.<\/li>\n<li>I&#8217;m using webpack, but there&#8217;s also grunt, gulp, bower, browserify, etc&#8230;<\/li>\n<li>How does the strategies webpack is choosing differ from the ones used by the other systems. Why do they make the choices they make? What are the trade offs?<\/li>\n<li>Should I be using any of these other tools in addition to webpack? Why would I do that?<\/li>\n<\/ul>\n<p><strong>Getting the LS Graph into Memory<\/strong><\/p>\n<ul>\n<li>The way the <a href=\"http:\/\/api.littlesis.org\/index.php\/documentation#entities\" target=\"_blank\"  rel=\"nofollow\" >LS API<\/a> looks at graph data currently is a bit curious. It let&#8217;s you do &#8220;1st degree&#8221; or &#8220;2nd degree&#8221; searches form one node (ie: all nodes one hop or two hops away from a given person or org) but nothing that does a full traversal of the graph (probably in part because it currently has no semantics that I can discern for representing the full graph or its subsets <em>as a graph<\/em>)<\/li>\n<li>I&#8217;d like to have <code>show-me-the-money<\/code> do precisely these sorts of graph searches because I imagine it might surface some interesting patterns within the network as a whole that aren&#8217;t currently discoverable given the site&#8217;s modes of display. (For example, it might be nice to drop &#8220;Goldman Sachs&#8221; into the cavnass and ask to see the whole graph that is discoverable by a breadth-first search starting at GS, and editing down from there.)<\/li>\n<li>In order to do this, I need to have a representation of the LittleSis relationship graph in memory to run the algorithms on. It&#8217;s not clear how I could do this in a way that wouldn&#8217;t be prohibitively expensive. For example: a naive approach would be to construct an adjacency list through a SQL query of <em>every<\/em> entity in the database and every entity that those entities has a relationshihp to. Given that we&#8217;re talking about ~5GB of entities, I can&#8217;t imagine getting that query to run anywhere close to acceptably fast. And then I&#8217;ve got just got it <em>loaded<\/em> and still have to run my graph algorithm on a very large graph in memory.<\/li>\n<li>So what else could I do?<\/li>\n<\/ul>\n<p><strong>Equality Checks on Immutable Data Structures<\/strong><\/p>\n<ul>\n<li>One of the arguments for using <a href=\"https:\/\/facebook.github.io\/immutable-js\/\" target=\"_blank\"  rel=\"nofollow\" >Immutable.js<\/a> in the data store is that it allows you to very inexpesively check for changes in state in the store by checking data structures for equality. Since the underlying data structure can&#8217;t change, you can very quickly check the reference of the variable that refers to the data structure to tell whether it&#8217;s changed. If the reference is the same as it was before, nothing has changed. If it refers to a new immmutable data structure, you konw something has changed.<\/li>\n<li>Thus, you can check very large nested data structures without having to traverse the whole thing to tell if anything has changed, which saves a lot of time, memory, and complexity that would go into implementing the checks. Sounds great! BUT&#8230;<\/li>\n<li>Back when I was working on graph algos, I remember Guillaume warning me that I was going to blow the big-O of one of my algos because I was checking two Lists (the adjacency lists of two nodes in a graph) for equality. He pointed out that the comparison would require traversing each of the lists in its entirety to return a result.<\/li>\n<li>This feels like a contradiction! (Or is it?) In the JS example, immutable data structures can be compared for inequality very quickly by checking the references of the variables that store them. It was <em>precisely<\/em> the traversal of an entire data structure that immutability helped us avoid. In the Scala example, precisely because we are using an immutable data strucutre (and not an object that wraps them, for example) that we have to traverse them in their entirety to determine that they are equal.<\/li>\n<li>I realize that the key difference here probably has to do with the former example examining variables and the latter examing the data structures themselves. But still. This seems counterintuitive. Does using immutable data structures net us quick equality checks or not? Is there a better way to think of it?<\/li>\n<\/ul>\n<p><strong>Data Viz in React<\/strong><\/p>\n<ul>\n<li>Trying to figure out how to square the circle here. Most data viz uses d3, but d3 also abstracts over the DOM, but in a different way than React, so I anticipate getting them to play together to be a bit tricky (some Recursers seemed to think it would be)<\/li>\n<li>Found a bunch of examples, some of which just directly create SVG objects, some of which try to share abstraction over the DOM with D3. Both seem to have downsides. Not clear that a standard practice has emerged in this area yet.<\/li>\n<li>How should I think about the decision?<\/li>\n<\/ul>\n<p><strong>Integration Tests for React<\/strong><\/p>\n<ul>\n<li>How can I write integration (large brack feature-level) tests for React apps?<\/li>\n<li>Most of the testing I&#8217;m seeing looks a a single component<\/li>\n<li>I want a test that allows me to ask questions like &#8220;If I fill out the form, and click on the search result, does the search result show up in the map canvass area?&#8221;<\/li>\n<li>React has a great <code>TestUtils.Simulate<\/code> method that allows me to simulate all those user actions, BUT it only works synchronously (TOTALLY unclear why), so for user actions that trigger asyncronous actions (like hitting the LS API) it&#8217;s pretty unclear to me how I&#8217;d test these. Closest thing I can find uses <code>SetTimeOut<\/code> to make the test wait for a specific period of time, but this seems undesirable because it&#8217;s going to either (A) be slower than necessary, (B) result in non-deterministic tests [will the callback return before the time-out is over?], or both.<\/li>\n<li>Any other ideas?<\/li>\n<\/ul>\n",
+    "parent": null,
+    "link": "http:\/\/dev.thelearningcollective.nyc\/austins-check-in-for-5-27-15\/",
+    "date": "2015-05-25T20:59:36",
+    "modified": "2015-05-25T20:59:36",
+    "format": "standard",
+    "slug": "austins-check-in-for-5-27-15",
+    "guid": "http:\/\/thelearningcollective.nyc\/?p=1531",
+    "excerpt": "<p>Did Last Week Moved to front-end As I shared a bit at our last session, I hit a real roadblock in the efforts to apply the &#8220;test-a-little-bit-as-you-go&#8221; approach proscribed by Working With Legacy Code. More specifically, I set out to&hellip; <a href=\"http:\/\/dev.thelearningcollective.nyc\/austins-check-in-for-5-27-15\/\" class=\"more-link\">Continue Reading <span class=\"meta-nav\">&rarr;<\/span><\/a><\/p>\n",
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "date_tz": "Etc\/GMT-5",
+    "date_gmt": "2015-05-26T01:59:36",
+    "modified_tz": "Etc\/GMT-5",
+    "modified_gmt": "2015-05-26T01:59:36",
+    "meta": {
+      "links": {
+        "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1531",
+        "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2",
+        "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts",
+        "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1531\/comments",
+        "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1531\/revisions"
+      }
+    },
+    "featured_image": null,
+    "terms": {
+      "category": [
+        {
+          "ID": 1,
+          "name": "Check-ins",
+          "slug": "check-ins",
+          "description": "",
+          "taxonomy": "category",
+          "parent": null,
+          "count": 31,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/category\/check-ins\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms\/1"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": 1561,
+    "title": "Pea&#8217;s Check-in 5\/26\/2015 &#8211; Objects Uncovered",
+    "status": "publish",
+    "type": "post",
+    "author": {
+      "ID": 1,
+      "username": "misfist",
+      "name": "Pea",
+      "first_name": "",
+      "last_name": "",
+      "nickname": "Pea",
+      "slug": "misfist",
+      "URL": "",
+      "avatar": "http:\/\/1.gravatar.com\/avatar\/4c88de43757cff8eeed24564f5729541?s=96",
+      "description": "",
+      "registered": "2015-03-18T04:54:16+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1\/posts"
+        }
+      }
+    },
+    "content": "<h2>What I did<\/h2>\n<p>I spent time learning more about JavaScript objects, typing out and\/or using substitution on the examples in the chapter.<\/p>\n<h2>What I learned<\/h2>\n<h3>Methods<\/h3>\n<p>Method is a property (of an object) that holds a function value.<\/p>\n<pre><code>\/\/Declare the object\nvar rabbit = {};\n\n\/\/Assign a property which has a value that happens to be a function\nrabbit.speak = function(line) {\n    console.log(\"The rabbit says: \" + line);\n};\n\n\/\/Call the object method\nrabbit.speak(\"I'm a rabbit, so what?\");\n\/\/=&gt; The rabbit says: I'm a rabbit, so what?\n\n\/\/Assign another property with a string value\nrabbit.type = \"Dutch\";\n\n\/\/Object now holds 2 properties, a function and a string\nconsole.log(rabbit);\n\/\/=&gt; {speak: function (line){\u2026}, type: \"Dutch\"}\n<\/code><\/pre>\n<h4><code>this<\/code> keyword refers to the object on which the method is being called<\/h4>\n<pre><code>\/\/Declare the function\nfunction speak(words) {\n  console.log('THE ' + this.type + ' RABBIT SAYS,' + words);\n}\n\n\/\/Declare the object\nvar whiteRabbit = {type: \"white\", sentence: speak};\n\nwhiteRabbit.sentence(\"Oh my ears and whiskers, how late it's getting!\");\n\/\/=&gt;\"THE white RABBIT SAYS,Oh my ears and whiskers, how late it's getting!\"\n<\/code><\/pre>\n<p>Note: It seems the function <code>sentence()<\/code> must be declared before (or at the same time as) assigning it to the property <code>speak<\/code>.<\/p>\n<h4><code>apply<\/code> and <code>call<\/code> methods<\/h4>\n<p>Both can be used to call a function.<\/p>\n<pre><code>\/\/Call the function speak using apply method\nspeak.apply(whiteRabbit, [\"Oh my ears and whiskers, how late it's getting!\"]);\n\/\/=&gt;\"THE white RABBIT SAYS,Oh my ears and whiskers, how late it's getting!\"\n\n\/\/Call the function speak using the call method\nspeak.call(whiteRabbit, \"Oh my ears and whiskers, how late it's getting!\");\n\/\/=&gt;\"THE white RABBIT SAYS,Oh my ears and whiskers, how late it's getting!\"\n\nspeak.call({type: \"Dutch\"}, \"Oh my ears and whiskers, how late it's getting!\");\n\/\/=&gt;\"THE Dutch RABBIT SAYS,Oh my ears and whiskers, how late it's getting!\"\n<\/code><\/pre>\n<h3>Prototype<\/h3>\n<p>It seems like prototype is an empty object within and object (or empty array within an array [though, I thought an array is an object, so&#8230;]). But, I don&#8217;t really understand why it exists or what it&#8217;s intended to do.<\/p>\n<pre><code>\/\/Object prototype\nconsole.log(Object.prototype);\n\/\/=&gt;[object Object] { ... }\n\n\/\/Array prototype\nconsole.log(Array.prototype);\n\/\/=&gt;[]\n\nconsole.log(Object.getPrototypeOf({}) == Object.prototype);\n\/\/=&gt;true\n\nconsole.log(Object.getPrototypeOf({}));\n\/\/=&gt;[object Object] { ... }\n\nconsole.log(Object.getPrototypeOf(Object.prototype));\n\/\/=&gt;null\n\nconsole.log(Object.getPrototypeOf(isNaN));\n\/\/=&gt; function () {}\n<\/code><\/pre>\n<h4><code>Object.create<\/code><\/h4>\n<p>This seems to be being used like a constructor.<\/p>\n<pre><code>\/\/Define function speak\nfunction speak(words) {\n  console.log(\"THE \" + this.type + \" RABBIT SAYS, \" + words + \"!\");\n}\n\n\/\/Define variable protoRabbit and assign object with property sentence\nvar protoRabbit = {sentence: speak};\n<\/code><\/pre>\n<p>This is like creating the object <code>var killerRabbit = {sentence: speak}<\/code><\/p>\n<pre><code>var killerRabbit = Object.create(protoRabbit);\n<\/code><\/pre>\n<p>This adds the property <code>type: \"killer\"<\/code> to the object <code>killerRabbit<\/code><\/p>\n<pre><code>killerRabbit.type = \"killer\";\n<\/code><\/pre>\n<p>The function <code>speak<\/code> is called using the <code>killerRabbit<\/code> object&#8217;s property <code>sentence<\/code>, which is assigned the function value <code>speak<\/code><\/p>\n<pre><code>killerRabbit.sentence(\"argh\");\n\/\/=&gt;\"THE killer RABBIT SAYS, argh!\"\n<\/code><\/pre>\n<h4>Constructors<\/h4>\n<p>Create a new instance of constructor object using the <code>new<\/code> keyword. By convention, constructor functions are uppercase.<\/p>\n<pre><code>\/\/Define constructor\nfunction Rabbit(type) {\n  this.type = type;\n}\n\n\/\/Define a new instance of Rabbit\nvar blackRabbit = new Rabbit(\"black\");\n\nconsole.log(blackRabbit);\n\/\/=&gt;[object Object] {type: \"black\"}\nconsole.log(blackRabbit.type);\n\/\/=&gt;black\n\n\/\/Define a new instance of Rabbit\nvar killerRabbit = new Rabbit(\"killer\");\n\nconsole.log(killerRabbit);\n\/\/=&gt;[object Object] {type: \"killer\"}\nconsole.log(killerRabbit.type);\n\/\/=&gt;killer\n<\/code><\/pre>\n<p>Somehow, the constructor function automatically gets a <code>prototype<\/code> property, which is set to an empty object.<\/p>\n<pre><code>console.log(Rabbit.prototype);\n\/\/=&gt;[object Object] { ... }\n<\/code><\/pre>\n<p>Methods can be added to a constructor after it&#8217;s created using prototype.<\/p>\n<pre><code>Rabbit.prototype.speak = function(words) {\n  console.log(\"THE \" + this.type + \" RABBIT SAYS, \" + words + \"!\");\n}\n\nkillerRabbit.speak(\"eek\");\n\/\/=&gt;THE killer RABBIT SAYS, eek!\n\nRabbit.prototype.dance = function(danceform) {\n  console.log(\"THE \" + this.type + \" RABBIT DANCES THE \" + danceform);\n}\n\nkillerRabbit.dance(\"jig\");\n\/\/=&gt;\"THE killer RABBIT DANCES THE jig\"\n<\/code><\/pre>\n<p>Trying to add a property to the constructor this way does <em>not<\/em> work (wah wah).<\/p>\n<pre><code>Rabbit.speak = function(words) {\n  console.log(\"THE \" + this.type + \" RABBIT SAYS, \" + words + \"!!\");\n}\n<\/code><\/pre>\n<p>This seems to function the same way as if <code>speak<\/code> had been defined in the constructor,  like:<\/p>\n<pre><code>function Rabbit(type) {\n  this.type = type;\n  this.speak = function(words) {\n    console.log(\"THE \" + this.type + \" RABBIT SAYS, \" + words + \"!\");\n  }\n}\n<\/code><\/pre>\n<p><strong>According to the book<\/strong>:<\/p>\n<blockquote><p>It is important to note the distinction between the way a prototype is associated with a constructor (through its prototype property) and the way objects have a prototype (which can be retrieved with `Object.getPrototypeOf`). The actual prototype of a constructor is `Function.prototype` since constructors are functions. Its prototype property will be the prototype of instances created through it but is not its own prototype.<\/p><\/blockquote>\n<p><a href=\"http:\/\/eloquentjavascript.net\/06_object.html#p_4sWuvx6wkg\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/eloquentjavascript.net\/06_object.html#p_4sWuvx6wkg<\/a><\/p>\n<p>The reason this is important isn&#8217;t clear to me at this point. I&#8217;ll stow it for later.<\/p>\n<h4>Overriding Properties<\/h4>\n<p>Properties assigned to a constructor can be overridden in an instance.<\/p>\n<pre><code>Rabbit.prototype.teeth = \"small\";\n\nkillerRabbit.teeth = \"pointy\";\n\nconsole.log(killerRabbit.teeth);\n\/\/=&gt;\"pointy\"\n\nconsole.log(blackRabbit.teeth);\n\/\/=&gt;\"small\"\n<\/code><\/pre>\n<p><strong>Somehow, this is supposed to be important also<\/strong>:<\/p>\n<blockquote><p>It is also used to give the standard function and array prototypes a different toString method than the basic object prototype.<\/p><\/blockquote>\n<p><a href=\"http:\/\/eloquentjavascript.net\/06_object.html#p_or3\/lz1DV8\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/eloquentjavascript.net\/06_object.html#p_or3\/lz1DV8<\/a><\/p>\n<pre><code>console.log(Array.prototype.toString);\n\/\/=&gt;function toString() {[native code]}\n\nconsole.log(Object.prototype.toString);\n\/\/=&gt;function toString() {[native code]}\n\nconsole.log(Array.prototype.toString == Object.prototype.toString);\n\/\/=&gt;false\n\nconsole.log(Object.prototype.toString.call([1,2,3]));\n\/\/=&gt;\"[object Array]\"\n<\/code><\/pre>\n<p>##Update<br \/>\n###Prototype Interference<br \/>\nSomehow, &#8220;the object\u2019s prototype gets in the way.&#8221;<\/p>\n<pre><code>Object.prototype.problem = \"Why is this a problem?\";\n\nfor (var activity in map) {\n  console.log(activity);\n}\n\n\/\/=&gt; \"Ate tofu\"\n\/\/=&gt; \"Ate banana\"\n\/\/=&gt; \"Danced\"\n\/\/=&gt; \"problem\"\n<\/code><\/pre>\n<p><code>problem<\/code> isn&#8217;t an activity name.<\/p>\n<pre><code>console.log(\"problem\" in map);\n\/\/=&gt; true\n\nconsole.log(\"toString\" in map);\n\/\/=&gt; true\n<\/code><\/pre>\n<p><code>problem<\/code> can be deleted.<\/p>\n<pre><code>delete Object.prototype.problem;\n\nconsole.log(\"problem\" in map);\n\/\/=&gt; false\n<\/code><\/pre>\n<p><code>toString<\/code> still returns true.<\/p>\n<pre><code>console.log(\"toString\" in map);\n\/\/=&gt; true\n<\/code><\/pre>\n<p>This is apparently related to the way JavaScript distinguishes between enumerable and nonenumerable properties. Properties that are created by assignment are enumerable, whereas standard properties of <code>Object.prototype<\/code> are nonenumerable.<\/p>\n<p>It is possible to define nonenumerable properties too. This will make it so the property doesn&#8217;t appear in the loops of our objects.<\/p>\n<pre><code>Object.defineProperty(Object.prototype, \"hiddenNonsense\", \n{enumerable: false, value: \"I'm hidden\"});\n\nvar map = {'Ate banana': 444, 'Ate tofu': 666, 'Danced': 111};\n\nfor (var name in map) {\n  console.log(name);\n}\n\/\/=&gt; \"Ate banana\"\n\/\/=&gt; \"Ate tofu\"\n\/\/=&gt; \"Danced\"\n\nconsole.log(map.hiddenNonsense);\n\/\/=&gt;\"I'm hidden\"\n\nvar activities = {fishing: \"dead fish\", dumping: \"dirty ocean\"};\n\nfor (var action in activities) {\n  console.log(action);\n}\n\/\/=&gt;\"fishing\"\n\/\/=&gt;\"dumping\"\n\nconsole.log(activities.hiddenNonsense);\n\/\/=&gt;\"I'm hidden\"\n<\/code><\/pre>\n<p>However, <code>in<\/code> will still show the property to existing in our object.<\/p>\n<pre><code>console.log(\"hiddenNonsense\" in map);\n\/\/=&gt;true\n<\/code><\/pre>\n<p>The <code>hasOwnProperty<\/code> method can be used to get around this.<\/p>\n<pre><code>console.log(activities.hasOwnProperty(hiddenNonsense));\n\/\/=&gt;false\n<\/code><\/pre>\n<p>Add a condition check<\/p>\n<pre><code>for (var action in activities) {\n  console.log('Without hasOwnProperty: ', action);\n  if(activities.hasOwnProperty(action)) {\n    \/\/console.log('With: ', action);\n  }\n}\n\/\/=&gt; With: fishing\n\/\/=&gt; With: dumping\n\/\/=&gt; Without hasOwnProperty: fishing\n\/\/=&gt; Without hasOwnProperty:  dumping\n\/\/=&gt; Without hasOwnProperty:  hiddenNonsense\n<\/code><\/pre>\n<p>To be continued&#8230;<br \/>\n<a href=\"http:\/\/eloquentjavascript.net\/06_object.html#p_1\/lgWgImJc\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/eloquentjavascript.net\/06_object.html#p_1\/lgWgImJc<\/a><\/p>\n",
+    "parent": null,
+    "link": "http:\/\/dev.thelearningcollective.nyc\/peas-check-in-5252015-objects-uncovered\/",
+    "date": "2015-05-25T19:42:10",
+    "modified": "2015-05-25T19:42:10",
+    "format": "standard",
+    "slug": "peas-check-in-5252015-objects-uncovered",
+    "guid": "http:\/\/thelearningcollective.nyc\/?p=1525",
+    "excerpt": "<p>What I did I spent time learning more about JavaScript objects, typing out and\/or using substitution on the examples in the chapter. What I learned Methods Method is a property (of an object) that holds a function value. \/\/Declare the&hellip; <a href=\"http:\/\/dev.thelearningcollective.nyc\/peas-check-in-5252015-objects-uncovered\/\" class=\"more-link\">Continue Reading <span class=\"meta-nav\">&rarr;<\/span><\/a><\/p>\n",
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "date_tz": "Etc\/GMT-5",
+    "date_gmt": "2015-05-26T00:42:10",
+    "modified_tz": "Etc\/GMT-5",
+    "modified_gmt": "2015-05-26T00:42:10",
+    "meta": {
+      "links": {
+        "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1561",
+        "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+        "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts",
+        "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1561\/comments",
+        "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1561\/revisions"
+      }
+    },
+    "featured_image": null,
+    "terms": {
+      "category": [
+        {
+          "ID": 1,
+          "name": "Check-ins",
+          "slug": "check-ins",
+          "description": "",
+          "taxonomy": "category",
+          "parent": null,
+          "count": 31,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/category\/check-ins\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms\/1"
+            }
+          }
+        }
+      ],
+      "post_tag": [
+        {
+          "ID": 3,
+          "name": "Javascript",
+          "slug": "javascript",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 14,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/javascript\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/3"
+            }
+          }
+        },
+        {
+          "ID": 45,
+          "name": "objects",
+          "slug": "objects",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 1,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/objects\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/45"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": 1519,
+    "title": "React Resources",
+    "status": "publish",
+    "type": "post",
+    "author": {
+      "ID": 2,
+      "username": "austin",
+      "name": "Austin",
+      "first_name": "Austin",
+      "last_name": "",
+      "nickname": "austin",
+      "slug": "austin",
+      "URL": "",
+      "avatar": "http:\/\/1.gravatar.com\/avatar\/4aa3e7801814bc5ed3a625cd82d6c3ac?s=96",
+      "description": "",
+      "registered": "2015-03-18T07:00:13+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2\/posts"
+        }
+      }
+    },
+    "content": "<h1>Notes on Learning React<\/h1>\n<p>Ad-hoc list of useful resources for a n00b learning React&#8230;<\/p>\n<p><a name='tutorials'><\/a><\/p>\n<h1>Tutorials<\/h1>\n<ul>\n<li><a href=\"https:\/\/facebook.github.io\/react\/docs\/tutorial.html\" target=\"_blank\"  rel=\"nofollow\" >basic fb tutorial<\/a><\/li>\n<li><a href=\"https:\/\/facebook.github.io\/react\/blog\/2013\/11\/05\/thinking-in-react.html\" target=\"_blank\"  rel=\"nofollow\" >thinking in react<\/a><\/li>\n<li><a href=\"http:\/\/tylermcginnis.com\/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react\/\" target=\"_blank\"  rel=\"nofollow\" >comprehensive guide<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/enaqx\/awesome-react\" target=\"_blank\"  rel=\"nofollow\" >awesome react<\/a><\/li>\n<li><a href=\"https:\/\/egghead.io\/lessons\/react-using-refs-to-access-components\" target=\"_blank\"  rel=\"nofollow\" >using refs<\/a><\/li>\n<\/ul>\n<p><a name='testing'><\/a><\/p>\n<h1>Testing<\/h1>\n<ul>\n<li><a href=\"https:\/\/facebook.github.io\/react\/docs\/test-utils.html#shallow-rendering\" target=\"_blank\"  rel=\"nofollow\" >shallow rendering<\/a><\/li>\n<li><a href=\"https:\/\/facebook.github.io\/jest\/\" target=\"_blank\"  rel=\"nofollow\" >jest<\/a><\/li>\n<li><a href=\"https:\/\/facebook.github.io\/react\/docs\/test-utils.html\" target=\"_blank\"  rel=\"nofollow\" >react test utils<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/facebook\/react\/blob\/52752446760dee0bc7232b4146f5a309ac57f065\/src\/renderers\/dom\/client\/eventPlugins\/SimpleEventPlugin.js.\" target=\"_blank\"  rel=\"nofollow\" >simulate events<\/a><\/li>\n<li><a href=\"http:\/\/www.jackcallister.com\/2014\/12\/01\/building-a-test-suite-in-react-js.html\" target=\"_blank\"  rel=\"nofollow\" >building a test suite in react<\/a><\/li>\n<li><a href=\"http:\/\/maketea.co.uk\/2014\/05\/22\/building-robust-web-apps-with-react-part-3.html\" target=\"_blank\"  rel=\"nofollow\" >rewirify for dependency injection<\/a><\/li>\n<\/ul>\n<p><a name='testing-cross-browser'><\/a><\/p>\n<h1>Cross Browser Tests<\/h1>\n<ul>\n<li><a href=\"https:\/\/ci.testling.com\/guide\/quick_start\" target=\"_blank\"  rel=\"nofollow\" >testling &#8211; multiple browser tests<\/a><\/li>\n<li><a href=\"http:\/\/www.browsersync.io\/\" target=\"_blank\"  rel=\"nofollow\" >browser sync<\/a><\/li>\n<\/ul>\n<p><a name='testing-mocha'><\/a><\/p>\n<h1>Testing w\/ Mocha<\/h1>\n<ul>\n<li><a href=\"http:\/\/www.hammerlab.org\/2015\/02\/14\/testing-react-web-apps-with-mocha\/\" target=\"_blank\"  rel=\"nofollow\" >hammerlab &#8211; pt 1<\/a><\/li>\n<li><a href=\"http:\/\/www.hammerlab.org\/2015\/02\/21\/testing-react-web-apps-with-mocha-part-2\/\" target=\"_blank\"  rel=\"nofollow\" >hammerlabl &#8211; pt 2<\/a><\/li>\n<li><a href=\"http:\/\/www.asbjornenge.com\/wwc\/testing_react_components.html\" target=\"_blank\"  rel=\"nofollow\" >deep mocha example<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/jesstelford\/react-testing-mocha-jsdom\" target=\"_blank\"  rel=\"nofollow\" >another mocha<\/a><\/li>\n<li><a href=\"http:\/\/parrisneeds.coffee\/2014\/08\/04\/reactjs-all-the-things\/\" target=\"_blank\"  rel=\"nofollow\" >mocha w\/ sinon<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/toranb\/react-example-with-integration-tests\" target=\"_blank\"  rel=\"nofollow\" >integration tests<\/a><\/li>\n<li><a href=\"http:\/\/gofreerange.com\/mocha\/docs\/Mocha\/Mock.html\" target=\"_blank\"  rel=\"nofollow\" >mocks in mocha<\/a><\/li>\n<li><a href=\"http:\/\/sinonjs.org\/\" target=\"_blank\"  rel=\"nofollow\" >sinon<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/elliotf\/mocha-sinon\" target=\"_blank\"  rel=\"nofollow\" >mocha-sinon<\/a><\/li>\n<li><a href=\"http:\/\/chaijs.com\/plugins\/sinon-chai\" target=\"_blank\"  rel=\"nofollow\" >sinon-chai<\/a><\/li>\n<li><a href=\"https:\/\/nicolas.perriault.net\/code\/2013\/testing-frontend-javascript-code-using-mocha-chai-and-sinon\/\" target=\"_blank\"  rel=\"nofollow\" >using mocha, sinon, and chai<\/a><\/li>\n<\/ul>\n<p><a name='flux'><\/a><\/p>\n<h1>Flux<\/h1>\n<ul>\n<li><a href=\"https:\/\/speakerdeck.com\/jmorrell\/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1\" target=\"_blank\"  rel=\"nofollow\" >those who forget the past deck<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/kriasoft\/react-starter-kit\/issues\/22\" target=\"_blank\"  rel=\"nofollow\" >implementations<\/a><\/li>\n<li><a href=\"http:\/\/martyjs.org\/\" target=\"_blank\"  rel=\"nofollow\" >marty.js<\/a><\/li>\n<li><a href=\"https:\/\/medium.com\/brigade-engineering\/what-is-the-flux-application-architecture-b57ebca85b9e\" target=\"_blank\"  rel=\"nofollow\" >what is flux?<\/a><\/li>\n<li><a href=\"https:\/\/gist.github.com\/wincent\/598fa75e22bdfa44cf47#Does_Relay_routing_aim_to_replace_something_like_reactrouter_or_both_will_be_complementary\" target=\"_blank\"  rel=\"nofollow\" >relay as alternative<\/a><\/li>\n<\/ul>\n<p><a name='alternatives'><\/a><\/p>\n<h1>Alternatives to React<\/h1>\n<ul>\n<li><a href=\"https:\/\/lhorie.github.io\/mithril\/\" target=\"_blank\"  rel=\"nofollow\" >mithril<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/Raynos\/mercury\" target=\"_blank\"  rel=\"nofollow\" >mercury<\/a><\/li>\n<\/ul>\n<p><a name='starter-kits'><\/a><\/p>\n<h1>Starter Kits<\/h1>\n<ul>\n<li><a href=\"https:\/\/github.com\/facebook\/react\/wiki\/Complementary-Tools\" target=\"_blank\"  rel=\"nofollow\" >complementary tools<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/kriasoft\/react-starter-kit\" target=\"_blank\"  rel=\"nofollow\" >kriasoft starter kit<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/steida\/este\" target=\"_blank\"  rel=\"nofollow\" >este.js starter kit<\/a><\/li>\n<\/ul>\n<p><a name='webpack'><\/a><\/p>\n<h1>Webpack<\/h1>\n<ul>\n<li><a href=\"http:\/\/reactjs.net\/guides\/es6.html\" target=\"_blank\"  rel=\"nofollow\" >with es6<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/christianalfoni\/react-webpack-cookbook\/\" target=\"_blank\"  rel=\"nofollow\" >webpack cookbook<\/a><\/li>\n<li><a href=\"http:\/\/gaearon.github.io\/react-hot-loader\/getstarted\/\" target=\"_blank\"  rel=\"nofollow\" >hot-loader<\/a><\/li>\n<li><a href=\"http:\/\/jslog.com\/2014\/10\/02\/react-with-webpack-part-1\/\" target=\"_blank\"  rel=\"nofollow\" >react with webpack<\/a><\/li>\n<li><a href=\"https:\/\/www.npmjs.com\/package\/html-webpack-plugin\" target=\"_blank\"  rel=\"nofollow\" >html template plugin<\/a><\/li>\n<\/ul>\n<p><a name='rails'><\/a><\/p>\n<h1>With Rails<\/h1>\n<ul>\n<li><a href=\"https:\/\/github.com\/justin808\/react-webpack-rails-tutorial\/\" target=\"_blank\"  rel=\"nofollow\" >webpack with rails tutorial<\/a><\/li>\n<li><a href=\"http:\/\/clarkdave.net\/2015\/01\/how-to-use-webpack-with-rails\/\" target=\"_blank\"  rel=\"nofollow\" >webpack with rails blog post<\/a><\/li>\n<li><a href=\"http:\/\/www.jamesmccann.nz\/2014\/11\/27\/bundling-npm-modules-through-webpack-and-rails-asset-pipeline.html\" target=\"_blank\"  rel=\"nofollow\" >webpack &amp; asset pipeline<\/a><\/li>\n<\/ul>\n<p><a name='emacs'><\/a><\/p>\n<h1>With Emacs<\/h1>\n<ul>\n<li>[emacs js trix](https:\/\/truongtx.me\/2014\/04\/20\/emacs-javascript-compl<br \/>\netion-and-refactoring)<\/li>\n<li><a href=\"http:\/\/codewinds.com\/blog\/2015-04-02-emacs-flycheck-eslint-jsx.html\" target=\"_blank\"  rel=\"nofollow\" >eslint setup<\/a><\/li>\n<li><a href=\"http:\/\/jbm.io\/2014\/01\/react-in-emacs-creature-comforts\/\" target=\"_blank\"  rel=\"nofollow\" >react emacs creature comforts<\/a><\/li>\n<\/ul>\n<h1>Authentication<\/h1>\n<ul>\n<li><a href=\"https:\/\/auth0.com\/blog\/2015\/04\/09\/adding-authentication-to-your-react-flux-app\/\" target=\"_blank\"  rel=\"nofollow\" >add authentication guide<\/a><\/li>\n<\/ul>\n<p><a name='es6'><\/a><\/p>\n<h1>Using ES6<\/h1>\n<ul>\n<li><a href=\"http:\/\/www.newmediacampaigns.com\/blog\/refactoring-react-components-to-es6-classes\" target=\"_blank\"  rel=\"nofollow\" >refactor from non-es6<\/a><\/li>\n<li><a href=\"http:\/\/modernweb.com\/2014\/02\/10\/replacing-callbacks-with-es6-generators\/\" target=\"_blank\"  rel=\"nofollow\" >using generators<\/a><\/li>\n<li><a href=\"http:\/\/javascriptplayground.com\/blog\/2014\/07\/introduction-to-es6-classes-tutorial\/\" target=\"_blank\"  rel=\"nofollow\" >es6 classes<\/a><\/li>\n<li><a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/JavaScript\/Reference\/Functions\/Arrow_functions\" target=\"_blank\"  rel=\"nofollow\" >arrow functions<\/a><\/li>\n<li><a href=\"http:\/\/reactjs.net\/guides\/es6.html\" target=\"_blank\"  rel=\"nofollow\" >react w\/ es6<\/a><\/li>\n<li><a href=\"http:\/\/www.2ality.com\/2014\/09\/es6-modules-final.html\" target=\"_blank\"  rel=\"nofollow\" >modules,imports<\/a><\/li>\n<li><a href=\"http:\/\/eviltrout.com\/2014\/05\/03\/getting-started-with-es6.html\" target=\"_blank\"  rel=\"nofollow\" >getting started w\/ modules<\/a><\/li>\n<li><a href=\"http:\/\/www.html5rocks.com\/en\/tutorials\/es6\/promises\/\" target=\"_blank\"  rel=\"nofollow\" >promises<\/a><\/li>\n<li><a href=\"https:\/\/www.promisejs.org\/generators\/\" target=\"_blank\"  rel=\"nofollow\" >promises with generators<\/a><\/li>\n<li><a href=\"https:\/\/strongloop.com\/strongblog\/es6-variable-declarations\/\" target=\"_blank\"  rel=\"nofollow\" >let and const instead of var<\/a><\/p>\n<\/li>\n<li><a href=\"http:\/\/benmccormick.org\/2014\/11\/12\/underscore-vs-lodash\/\" target=\"_blank\"  rel=\"nofollow\" >lodash v underscore<\/a><\/p>\n<\/li>\n<\/ul>\n<p><a name='css'><\/a><\/p>\n<h1>CSS<\/h1>\n<ul>\n<li><a href=\"https:\/\/github.com\/twbs\/bootstrap-sass\" target=\"_blank\"  rel=\"nofollow\" >bootstrap-sass<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/justin808\/bootstrap-sass-loader\" target=\"_blank\"  rel=\"nofollow\" >bootstrap-sass-loader<\/a> for webpack\n<ul>\n<li>must configure webpack.config.js <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/master\/webpack.config.js\" target=\"_blank\"  rel=\"nofollow\" >like this<\/a><\/li>\n<li>must configure bootstratp-sass.config.js <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/master\/bootstrap-sass.config.js\" target=\"_blank\"  rel=\"nofollow\" >like this<\/a><\/li>\n<li>will require <code>npm install<\/code> &#8230; <code>node-sass<\/code>, <code>imports-loader<\/code>, <code>file-loader<\/code>, <code>jquery<\/code> and <code>url-loader<\/code> to work correctly<\/li>\n<li>with loader, you don&#8217;t need import statements in your sass or require statements in your components<\/li>\n<li>use <a href=\"https:\/\/github.com\/aguestuser\/show-me-the-money\/blob\/master\/styles\/_main.scss#L9\" target=\"_blank\"  rel=\"nofollow\" >like this<\/a><\/li>\n<li>if you want to use bootstrap-sass <em>without<\/em> the loader, you can, but you need to <a href=\"https:\/\/github.com\/jtangelder\/sass-loader\/issues\/40#issuecomment-104536397\" target=\"_blank\"  rel=\"nofollow\" >specify an $icon-font-path variable<\/a> in sass <code>@import<\/code> statements<\/li>\n<\/ul>\n<\/li>\n<li><a href=\"http:\/\/react-bootstrap.github.io\/\" target=\"_blank\"  rel=\"nofollow\" >react-bootstrap<\/a><\/li>\n<li><a href=\"http:\/\/bensmithett.com\/smarter-css-builds-with-webpack\/\" target=\"_blank\"  rel=\"nofollow\" >modular css w\/ webpack<\/a><\/li>\n<\/ul>\n<p><a name='data-viz'><\/a><\/p>\n<h1>Data Viz<\/h1>\n<ul>\n<li><a href=\"http:\/\/nicolashery.com\/integrating-d3js-visualizations-in-a-react-app\/\" target=\"_blank\"  rel=\"nofollow\" >d3 with react<\/a><\/li>\n<li><a href=\"http:\/\/greweb.me\/bezier-easing-editor\/example\/\" target=\"_blank\"  rel=\"nofollow\" >bezier easing example<\/a><\/li>\n<li><a href=\"http:\/\/greweb.me\/bezier-easing-editor\/example\/\" target=\"_blank\"  rel=\"nofollow\" >bezier easing code<\/a><\/li>\n<li><a href=\"https:\/\/biesnecker.com\/2014\/10\/22\/using-reactjs-to-draw-dynamic-svgs\/\" target=\"_blank\"  rel=\"nofollow\" >guide for react &amp; svgs<\/a><\/li>\n<li><a href=\"https:\/\/www.npmjs.com\/package\/react-svg\" target=\"_blank\"  rel=\"nofollow\" >react-svg module<\/a><\/li>\n<li><a href=\"http:\/\/10consulting.com\/2014\/02\/19\/d3-plus-reactjs-for-charting\/\" target=\"_blank\"  rel=\"nofollow\" >blog on react &amp; d3 for charting<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/matthewwithanm\/react-inlinesvg\" target=\"_blank\"  rel=\"nofollow\" >react-inlinesvg<\/a><\/li>\n<li><a href=\"https:\/\/www.youtube.com\/watch?v=dcLrbiHIX5M\" target=\"_blank\"  rel=\"nofollow\" >talk on react &amp; data viz<\/a><\/li>\n<li><a href=\"http:\/\/conf.reactjs.com\/schedule.html#scalable-data-visualization\" target=\"_blank\"  rel=\"nofollow\" >talk on scalable data viz w\/ react<\/a><\/li>\n<\/ul>\n<p><a name='error-messages'><\/a><\/p>\n<h1>Cryptic Error Messages:<\/h1>\n<ul>\n<li>&#8220;Uncaught TypeError: e.toUpperCase is not a function&#8221;<br \/>\n&#8211;> failed to export a module correctly<\/li>\n<\/ul>\n",
+    "parent": null,
+    "link": "http:\/\/dev.thelearningcollective.nyc\/react-resources\/",
+    "date": "2015-05-22T14:34:10",
+    "modified": "2015-05-22T14:34:10",
+    "format": "standard",
+    "slug": "react-resources",
+    "guid": "http:\/\/thelearningcollective.nyc\/?p=1519",
+    "excerpt": "<p>Notes on Learning React Ad-hoc list of useful resources for a n00b learning React&#8230; Tutorials basic fb tutorial thinking in react comprehensive guide awesome react using refs Testing shallow rendering jest react test utils simulate events building a test suite&hellip; <a href=\"http:\/\/dev.thelearningcollective.nyc\/react-resources\/\" class=\"more-link\">Continue Reading <span class=\"meta-nav\">&rarr;<\/span><\/a><\/p>\n",
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "date_tz": "Etc\/GMT-5",
+    "date_gmt": "2015-05-22T19:34:10",
+    "modified_tz": "Etc\/GMT-5",
+    "modified_gmt": "2015-05-22T19:34:10",
+    "meta": {
+      "links": {
+        "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1519",
+        "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2",
+        "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts",
+        "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1519\/comments",
+        "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1519\/revisions"
+      }
+    },
+    "featured_image": null,
+    "terms": {
+      "category": [
+        {
+          "ID": 2,
+          "name": "Resources",
+          "slug": "resources",
+          "description": "",
+          "taxonomy": "category",
+          "parent": null,
+          "count": 11,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/category\/resources\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms\/2"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": 1469,
+    "title": "Pea&#8217;s Check-in 5\/12\/2015 &#8211; Higher-order Functions, pt. 2",
+    "status": "publish",
+    "type": "post",
+    "author": {
+      "ID": 1,
+      "username": "misfist",
+      "name": "Pea",
+      "first_name": "",
+      "last_name": "",
+      "nickname": "Pea",
+      "slug": "misfist",
+      "URL": "",
+      "avatar": "http:\/\/1.gravatar.com\/avatar\/4c88de43757cff8eeed24564f5729541?s=96",
+      "description": "",
+      "registered": "2015-03-18T04:54:16+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1\/posts"
+        }
+      }
+    },
+    "content": "<h2>What I did<\/h2>\n<p>I continued working through examples, using substitution to better understand what they&#8217;re doing. This week felt less successful because I got stuck on a couple of examples.<\/p>\n<h2>More Higher-order Functions<\/h2>\n<p><a href=\"http:\/\/eloquentjavascript.net\/05_higher_order.html#p_Typ91CWfYn\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/eloquentjavascript.net\/05_higher_order.html#p_Typ91CWfYn<\/a><\/p>\n<p>I got stuck on both of the following, unable to get the substitutions working. I&#8217;m not sure if it&#8217;s worth spending more time on them, or if I&#8217;m better off moving on to something else.<\/p>\n<p>Data source: <a href=\"http:\/\/eloquentjavascript.net\/code\/ancestry.js\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/eloquentjavascript.net\/code\/ancestry.js<\/a><\/p>\n<p><strong>This one kept getting stuck in an infinite loop.<\/strong><\/p>\n<pre><code>var byName = {};\nancestry.forEach(function(person) {\n  byName[person.name] = person;\n});\n\nfunction reduceAncestors(person, f, defaultValue) {\n  function valueFor(person) {\n    if (person == null)\n      return defaultValue;\n    else\n      return f(person, valueFor(byName[person.mother]),\n                       valueFor(byName[person.father]));\n  }\n  return valueFor(person);\n}\n\nfunction sharedDNA(person, fromMother, fromFather) {\n  if (person.name == \"Pauwels van Haverbeke\")\n    return 1;\n  else\n    return (fromMother + fromFather) \/ 2;\n}\nvar ph = byName[\"Philibert Haverbeke\"];\nconsole.log(reduceAncestors(ph, sharedDNA, 0) \/ 4);\n<\/code><\/pre>\n<p><em>Live Source: <a href=\"http:\/\/jsbin.com\/vohuqa\/3\/edit?js,console\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/jsbin.com\/vohuqa\/3\/edit?js,console<\/a><\/em><\/p>\n<p><strong>This one just returned NaN.<\/strong><\/p>\n<pre><code>var byName = {};\nancestry.forEach(function(person) {\n  byName[person.name] = person;\n});\n\n\/\/ console.log(byName[\"Emile Haverbeke\"]);\n\/\/ {\n\/\/   born: 1877,\n\/\/   died: 1968,\n\/\/   father: \"Carolus Haverbeke\",\n\/\/   mother: \"Maria Sturm\",\n\/\/   name: \"Emile Haverbeke\",\n\/\/   sex: \"m\"\n\/\/ }\n\nfunction reduceAncestors(person, f, defaultValue) {\n  function valueFor(person) {\n    if (person == null) {\n      return defaultValue;\n    }\n    else {\n      return f(person, valueFor(byName[person.mother]),\n                       valueFor(byName[person.father]));\n    }\n  }\n  return valueFor(person);\n}\n\nfunction countAncestors(person, test) {\n      function combine(person, fromMother, fromFather) {\n        var thisOneCounts = test(person);\n        return fromMother + fromFather + (thisOneCounts ? 1 : 0);\n      }\n      return reduceAncestors(person, combine, 0);\n}\n\nfunction longLivingPercentage(person) {\n  var all = countAncestors(person, function(person) {\n    return true;\n  });\n  var longLiving = countAncestors(person, function(person) {\n    return (person.died - person.born) &gt;= 70;\n  });\n  return longLiving \/ all;\n}\n\nconsole.log(longLivingPercentage(byName[\"Emile Haverbeke\"]));\n<\/code><\/pre>\n<p><em>Live source: <a href=\"http:\/\/jsbin.com\/cacede\/5\/\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/jsbin.com\/cacede\/5\/<\/a><\/em><\/p>\n<p><strong>Binding<\/strong><\/p>\n<p>Bind will call an instance of a function with some fixed arguments. (Maybe this is what @Dicey was looking for at the last session?)<\/p>\n<pre><code>var theSet = [\"Carel Haverbeke\", \"Maria van Brussel\",\n              \"Donald Duck\"];\nfunction isInSet(set, person) {\n  return set.indexOf(person.name) &gt; -1;\n}\n\nconsole.log(ancestry.filter(function(person) {\n  return isInSet(theSet, person);\n}));\n<\/code><\/pre>\n<p><strong>Equivalent to<\/strong><\/p>\n<pre><code>function ancestryFunc(person) {\n  return theSet.indexOf(person.name) &gt; -1;\n}\n\nconsole.log( ancestry.filter(ancestryFunc) );\n<\/code><\/pre>\n<p><code>bind()<\/code><\/p>\n<p>Applies <code>theSet<\/code> to <code>isInSet()<\/code>. The first argument, is used to pass a method. In this case, we&#8217;re not passing a method, so we use <code>null<\/code>.<\/p>\n<pre><code>console.log(ancestry.filter(isInSet.bind(null, theSet)));\n<\/code><\/pre>\n<p><strong>Flatten<\/strong><\/p>\n<p>Use the <code>reduce<\/code> method in combination with the <code>concat<\/code> method to \u201cflatten\u201d an array of arrays into a single array that has all the elements of the input arrays.<\/p>\n<pre><code>var arrays = [[1, 2, 3], [4, 5], [6]];\n\nconsole.log(arrays.reduce(function(a,b) {\n  return a.concat(b);\n})\n);\n\n\/\/This could also be done without reduce\nconsole.log( arrays[0].concat(arrays[1],arrays[2]) );\n<\/code><\/pre>\n<h3>Update:<\/h3>\n<p><strong>Mother-child age difference<\/strong><\/p>\n<p>Exercise: compute the average age difference between mothers and children (the age of the mother when the child is born). You can use the average function defined earlier in this chapter. <em>Note that not all the mothers mentioned in the data are themselves present in the array.<\/em><\/p>\n<p>It took quite a while for me to figure out how to do this (hopelessness and despair) because I had the syntax wrong for getting the mother&#8217;s birth year. I think the book wanted me to use filter or map; but, once I finally got it working, I ran out energy to make it better. Perhaps later.<\/p>\n<pre><code>var byName = {};\nancestry.forEach(function(person) {\n  byName[person.name] = person;\n});\n\nvar ageBorn = [];\nancestry.forEach(function(person) {\n  if(person.mother &amp;&amp; byName[person.mother]) {\n    ageBorn.push(person.born - byName[person.mother].born);\n  }\n});\n\nconsole.log( ageBorn.reduce(function(a, b) {\n  return a + b;\n}) \/ ageBorn.length\n);\n\n\/\/ Or, using the average function from last week\n\nfunction average(array) {\n  function plus(a, b) { return a + b; }\n  return array.reduce(plus) \/ array.length;\n}\n\nconsole.log( average(ageBorn) );\n<\/code><\/pre>\n<p><em>Live source: <a href=\"http:\/\/jsbin.com\/zoqaho\/2\/edit?js,console\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/jsbin.com\/zoqaho\/2\/edit?js,console<\/a><\/em><\/p>\n<h2>Next Up<\/h2>\n<ul>\n<li><a href=\"http:\/\/eloquentjavascript.net\/06_object.html\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/eloquentjavascript.net\/06_object.html<\/a><\/li>\n<li><a href=\"http:\/\/kadamwhite.github.io\/talks\/2014\/backbone-wordpress-wpsessions\/#\/\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/kadamwhite.github.io\/talks\/2014\/backbone-wordpress-wpsessions\/#\/<\/a><\/li>\n<li>Backbone tutorials<\/li>\n<\/ul>\n",
+    "parent": null,
+    "link": "http:\/\/dev.thelearningcollective.nyc\/peas-check-in-5122015-higher-order-functions-pt-2\/",
+    "date": "2015-05-11T22:42:48",
+    "modified": "2015-05-11T22:42:48",
+    "format": "standard",
+    "slug": "peas-check-in-5122015-higher-order-functions-pt-2",
+    "guid": "http:\/\/thelearningcollective.nyc\/?p=1469",
+    "excerpt": "<p>What I did I continued working through examples, using substitution to better understand what they&#8217;re doing. This week felt less successful because I got stuck on a couple of examples. More Higher-order Functions http:\/\/eloquentjavascript.net\/05_higher_order.html#p_Typ91CWfYn I got stuck on both of&hellip; <a href=\"http:\/\/dev.thelearningcollective.nyc\/peas-check-in-5122015-higher-order-functions-pt-2\/\" class=\"more-link\">Continue Reading <span class=\"meta-nav\">&rarr;<\/span><\/a><\/p>\n",
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "date_tz": "Etc\/GMT-5",
+    "date_gmt": "2015-05-12T03:42:48",
+    "modified_tz": "Etc\/GMT-5",
+    "modified_gmt": "2015-05-12T03:42:48",
+    "meta": {
+      "links": {
+        "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1469",
+        "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+        "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts",
+        "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1469\/comments",
+        "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1469\/revisions"
+      }
+    },
+    "featured_image": null,
+    "terms": {
+      "category": [
+        {
+          "ID": 1,
+          "name": "Check-ins",
+          "slug": "check-ins",
+          "description": "",
+          "taxonomy": "category",
+          "parent": null,
+          "count": 31,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/category\/check-ins\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms\/1"
+            }
+          }
+        }
+      ],
+      "post_tag": [
+        {
+          "ID": 41,
+          "name": "higher-order functions",
+          "slug": "higher-order-functions",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 2,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/higher-order-functions\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/41"
+            }
+          }
+        },
+        {
+          "ID": 3,
+          "name": "Javascript",
+          "slug": "javascript",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 14,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/javascript\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/3"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": 1465,
+    "title": "Austin&#8217;s Check-in for 5.13.15",
+    "status": "publish",
+    "type": "post",
+    "author": {
+      "ID": 2,
+      "username": "austin",
+      "name": "Austin",
+      "first_name": "Austin",
+      "last_name": "",
+      "nickname": "austin",
+      "slug": "austin",
+      "URL": "",
+      "avatar": "http:\/\/1.gravatar.com\/avatar\/4aa3e7801814bc5ed3a625cd82d6c3ac?s=96",
+      "description": "",
+      "registered": "2015-03-18T07:00:13+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2\/posts"
+        }
+      }
+    },
+    "content": "<h1>Did Last Week<\/h1>\n<h2>Littlesis<\/h2>\n<p>Mostly shadowed Matthew on making a <a href=\"http:\/\/littlesis.org\/topics\/fracking\" target=\"_blank\"  rel=\"nofollow\" >topics page about fracking<\/a> on the proper LittleSis site. Good news: it&#8217;s done and we finished it fast! Bad news: we&#8217;ve got a ways to go in cleaning things up and building solid test-driven workflows.<\/p>\n<p><strong>A thing I learned about refactoring without tests:<\/strong><\/p>\n<ul>\n<li>Matthew has a set up that enables him to work <em>really<\/em>: fast! (We finished that page in 1.5 days) ut brittle (no tests, verifies correctness through browser, seems to lend itself to a style where you get the code right once, verify it, then never refactor because you&#8217;re afraid it might break. I can see how a style like this would lead to the gradual accumulation of massive amounts of technical debt and incidental complexity)<\/li>\n<li>I did manage to suggest <a href=\"https:\/\/github.com\/skomputer\/lilsis\/blob\/master\/app\/controllers\/topics_controller.rb#L6-L23\" target=\"_blank\"  rel=\"nofollow\" >one refactor<\/a> to add a bit of structure and abstraction. That went over well.<\/li>\n<li>I want another to dry up <a href=\"https:\/\/github.com\/skomputer\/lilsis\/blob\/master\/app\/controllers\/topics_controller.rb#L88-L106\" target=\"_blank\"  rel=\"nofollow\" >these methods<\/a><\/li>\n<li>BUT: I want a testing harness in place for the working code before I do that refactor. (Without them, currently we&#8217;d have to manually check three different things in a few different ways to verify that my refactor worked!)<\/li>\n<\/ul>\n<p><strong>So&#8230; What does it take to test this?<\/strong><\/p>\n<ul>\n<li>Over the weekend, I started the task of trying to figure out what it would take to build the smallest necessary test harness to test <em>only the story<\/em> we&#8217;re working on<\/li>\n<li>Turns out it would take quite a lot of catch-up work, since I&#8217;d need to\n<ul>\n<li>Make the test DB<\/li>\n<li>Mock a logged-in user<\/li>\n<li>Create mocks\/stubs for all the different data types (entities, lists, people, industries, articles, etc&#8230;) contained in the new page I want to put under test<\/li>\n<li>Convince Matthew this isn&#8217;t a waste of time &#8212; or come up with a convincing way to butress my argument that &#8220;testing helps us move faster&#8221; when in fact it will take me a day or so to get the code base in a position where I&#8217;m even ready to <em>start<\/em> testing the thing we&#8217;re working on (which he could finish in a matter of minutes\/hours)<\/li>\n<\/ul>\n<\/li>\n<li>As a &#8220;testing&#8221; MVP, I decided to write a browser test that verified a logged-in user could see the homepage\n<ul>\n<li>I started off by figuring out that our authentication system, Devise, <a href=\"https:\/\/github.com\/plataformatec\/devise\/wiki\/How-To:-Stub-authentication-in-controller-specs\" target=\"_blank\"  rel=\"nofollow\" >recommends<\/a> using <a href=\"https:\/\/www.relishapp.com\/rspec\/rspec-mocks\/docs\" target=\"_blank\"  rel=\"nofollow\" >rspec-mocks<\/a> for mocking authenticated users<\/li>\n<li>I&#8217;m used to making stubs in rspec using <a href=\"https:\/\/github.com\/thoughtbot\/factory_girl\" target=\"_blank\"  rel=\"nofollow\" >FactoryGirl<\/a> for stubbing in rspec, so first thing I did was try to figure out the difference between mocks and stubs. Reading the rspecs-mock does, my legacy code book,  and Martin Fowler&#8217;s canonical <a href=\"http:\/\/martinfowler.com\/articles\/mocksArentStubs.html\" target=\"_blank\"  rel=\"nofollow\" >Mocks Arent&#8217; Stubs<\/a> were helpful in this regard.<\/li>\n<li>Along the way, I discovered <a href=\"https:\/\/github.com\/zeisler\/active_mocker\" target=\"_blank\"  rel=\"nofollow\" >active-mocker<\/a>, which seems to solve the coupling between ActiveRecord and the DB that makes Rails models hard to test&#8230;<\/li>\n<\/ul>\n<\/li>\n<li>But this left me with 3 alternative paths to testing:\n<ol>\n<li>make FactoryGirl stubs that touch the test DB (downside: requires a test db, will be slower, might not work with Devise; upside: I already know how to do it)<\/li>\n<li>make simple mock Users along the lines of what Devise suggests (downside: new thing to learn; upside: mocking seems more robust and like I&#8217;m going to need it to do the sort of testing recommended by the legacy code book anyway)<\/li>\n<li>try my hand at a full-on active-mocker implementation (upside: it&#8217;s almost certain this is where I want to wind up; downside: more learning curve)<\/li>\n<\/ol>\n<\/li>\n<li>In the end, I decided to do 1, 2, 3 in sequence but only got as far as making a User factory. Open to input on what a better way through this maze might be to a &#8220;quick win&#8221; for testing LS.<\/p>\n<\/li>\n<\/ul>\n<p><strong>Some evidence for why React.js is a good look for our frontend<\/strong><\/p>\n<ul>\n<li>The most interactive front-end pieces we have use <a href=\"http:\/\/littlesis.org\/entities\/20\/relationships\" target=\"_blank\"  rel=\"nofollow\" >data-tables<\/a><\/li>\n<li>Datatables use JQuery<\/li>\n<li>JQuery is somewhat difficult to wrangle into components<\/li>\n<li>Witness: we have <a href=\"https:\/\/github.com\/skomputer\/lilsis\/tree\/master\/app\/utility\" target=\"_blank\"  rel=\"nofollow\" >three different versions<\/a> that do essentially the same thing, but have recycled almost no code<\/li>\n<li>React is <em>built<\/em> for making reusable components, and would (I think) be a vast improvement. It also has lots of <a href=\"http:\/\/react.rocks\/tag\/DataTable\" target=\"_blank\"  rel=\"nofollow\" >built-in support for data tables<\/a><\/li>\n<\/ul>\n<p><strong>Big-O to the rescue?<\/strong><\/p>\n<p>Got a few peeks some spots where a little big-0 analysis might make a big difference. Currently, anytime something takes a long time to load, the first (and only) step we take is to cache the entire page&#8217;s HTML (and\/or all the data that it serves).<\/p>\n<p>This can get confusing for the developer (When do I cache and what do I cache? How do I cache? Did I remember to clear the cache after an edit?) But it also makes the site less reactive (if we ever want it to be that).<\/p>\n<p>Caching <em>might<\/em> be the right answer, but it seems telling that we always reach to that tool, without digging in first to see if other solutions might be viable (and hence make the caching unnecessary).<\/p>\n<p>One spot where this comes up is when we gather the data for the <code>Lists<\/code> data table, which (as it happens) overlaps with the other most expensive computation LS does &#8212; namely: computing board interlocks (which sounds pretty graph-y?).<\/p>\n<p>At any rate, <a href=\"https:\/\/github.com\/skomputer\/lilsis\/blob\/master\/app\/utility\/list_datatable.rb#L30-L88\" target=\"_blank\"  rel=\"nofollow\" >here&#8217;s the code<\/a>. Haven&#8217;t taken a close look at it but see enough repetetive calls to methods that traverse long lists that I suspect there might be room for improvement. Any gains in the <code>get_interlocks<\/code> department would pay big dividends, since that&#8217;s a computation that gets run across the site in lots of places.<\/p>\n<h2>Where\u24b6t<\/h2>\n<p><strong>Getting Help From Fancy People<\/strong><\/p>\n<p>The big takeaway from this week was that fancy programmers are incredibly friendly and willing to help on this project!<\/p>\n<p>To wit:<\/p>\n<ul>\n<li>After banging my head against the wall trying to decipher an inscrutable error message about my testing framework, I emailed the developr from <a href=\"http:\/\/www.47deg.com\/\" target=\"_blank\"  rel=\"nofollow\" >47 Degrees<\/a> who wrote the example Scala code I was cribbing off of, who promptly turned around and submitted a <a href=\"https:\/\/github.com\/the-learning-collective\/whereat\/pull\/1\/files\" target=\"_blank\"  rel=\"nofollow\" >pull request<\/a> within less than 24 hours that fixed the problem.\n<\/li>\n<li>\n<p>I also wrote the mailing list for Specs2 (the testing framework I\u2019m using). Within two days, the author of Specs2 <a href=\"https:\/\/groups.google.com\/forum\/#!topic\/specs2-users\/SNelF828648\" target=\"_blank\"  rel=\"nofollow\" >wrote back<\/a>, providing an ever better fix for the problem (and possibly turning up a bug in the 47 Degree folks&#8217; code: ie &#8212; tests that always pass?)<\/p>\n<\/li>\n<\/ul>\n<p>(A little useful context here: the tests in question that I was trying to get running are unit tests in the strictest sense: they don&#8217;t utilize the Android API at all, and are specificaly designed not to. I learned from talking to the 47 Degrees guy that it is in fact quite difficult to write Specs2 tests that mock and\/or use the Android environment, which claim was confirmed by reading <a href=\"https:\/\/groups.google.com\/forum\/#!topic\/specs2-users\/VeJXDoJKo10\" target=\"_blank\"  rel=\"nofollow\" >this epic thread<\/a> documenting the Herculean effort that went into the only successful effort to do so that I could find &#8212; resulting in this <a href=\"https:\/\/github.com\/jbrechtel\/robospecs\" target=\"_blank\"  rel=\"nofollow\" >3-years-out-of-date library<\/a>)<\/p>\n<ul>\n<li>Not to be deterred, I emailed the guy who wrote the library (super smart developer who works at <a href=\"http:\/\/www.thoughtworks.com\/\" target=\"_blank\"  rel=\"nofollow\" >ThoughtWorks<\/a> &#8212; ThoughtWorks is cool!), who offered to help update the library so it would work for this project. (I&#8217;m supposed to help! But to do that I&#8217;ll have to get over a fair amount of intimidation&#8230; Wish me luck!)<\/li>\n<\/ul>\n<p>The overall lesson: open source developers are really friendly and will help you if you ask. Also: it doesn&#8217;t hurt to be working on something not profit-related that&#8217;s clearly built to help make the world a better place. They like that! (As well they should.)<\/p>\n<p><strong>Current Status<\/strong><\/p>\n<ul>\n<li>finished <a href=\"https:\/\/github.com\/the-learning-collective\/whereat\/blob\/master\/src\/main\/scala\/org\/tlc\/whereat\/services\/IntersectionService.scala\" target=\"_blank\"  rel=\"nofollow\" >intersection geocoding<\/a> and <a href=\"https:\/\/github.com\/the-learning-collective\/whereat\/blob\/master\/src\/test\/scala\/org\/tlc\/whereat\/services\/IntersectionServiceSpec.scala\" target=\"_blank\"  rel=\"nofollow\" >it works!<\/a><\/li>\n<li><a href=\"https:\/\/github.com\/the-learning-collective\/whereat\/commit\/d49b78d7c70cca68c5fb017487e96e6d6313c57f\" target=\"_blank\"  rel=\"nofollow\" >extracted location service methods<\/a> into a module<\/li>\n<li><a href=\"https:\/\/github.com\/the-learning-collective\/whereat\/blob\/fdf87eed3158a26dc0c87a1ad80263597b5bfe4f\/src\/main\/scala\/org\/tlc\/whereat\/activities\/MainActivity.scala#L70-L101\" target=\"_blank\"  rel=\"nofollow\" >sketched out contact selector and sms-sending methods<\/a><\/li>\n<\/ul>\n<h1>Next Week Goals<\/h1>\n<h2>Littlesis<\/h2>\n<ul>\n<li>Use half of my time at Never Graduate Week to learn React\n<ul>\n<li>I just got here and started a React.js study group that 10 people more or less instantly joined! (I love Recurse Center!)* make some progress in bringing basic stuff under test<\/li>\n<li>Also, one of the developers from Facebook who works on React is here! (huzzah!)<\/li>\n<\/ul>\n<\/li>\n<li>start building mocks\/stubs so I can put the fracking topics page under test\n<ul>\n<li>read up on <a href=\"https:\/\/www.relishapp.com\/rspec\/rspec-mocks\/docs\" target=\"_blank\"  rel=\"nofollow\" >rspec-mocks<\/a><\/li>\n<li>investigate <a href=\"https:\/\/github.com\/zeisler\/active_mocker\" target=\"_blank\"  rel=\"nofollow\" >active-mocker<\/a> seems to solve the coupling between ActiveRecord and the DB that makes Rails models hard to test&#8230;<\/li>\n<\/ul>\n<\/li>\n<li>start making a Docker file to simplify install?<\/li>\n<\/ul>\n<h2>Where\u24b6t<\/h2>\n<ul>\n<li>Use half of my time at Never Graduate Week getting MVP ready to demo\n<ul>\n<li>user can text street corner to multiple friends picked from phone&#8217;s contacts<\/li>\n<li>bonus if I can get some sort of maps thing up and running&#8230;<\/li>\n<\/ul>\n<\/li>\n<li>Get all code under test\n<ul>\n<li>use Android-less unit tests where possible<\/li>\n<li>help with updating robospecs<\/li>\n<\/ul>\n<\/li>\n<li>find a nice screen-sharing tool to use for presentation<\/li>\n<\/ul>\n<h1>Questions<\/h1>\n<h2>Testing in LittleSis<\/h2>\n<ul>\n<li>See above section for the fundamental challenge in front of me (must mock or stub a bunch of data models before I can test the story we&#8217;re working on) and the maze of options in front of me for facing it down (FactoryGirl stubs, plain old rspec mocks, active-mocks on top of rspecs? etc..)<\/li>\n<li>How should I start? How can I get some quick wins to demonstrate the value of testing?<\/li>\n<\/ul>\n<h2>Big-O in LittleSis<\/h2>\n<ul>\n<li><a href=\"https:\/\/github.com\/skomputer\/lilsis\/blob\/master\/app\/utility\/list_datatable.rb\" target=\"_blank\"  rel=\"nofollow\" >Here is some code<\/a> that we speed up through caching<\/li>\n<li><a href=\"https:\/\/github.com\/skomputer\/lilsis\/blob\/master\/app\/models\/concerns\/cacheable.rb\" target=\"_blank\"  rel=\"nofollow\" >Here is what caching looks like<\/a> &#8212; might get called from <a href=\"https:\/\/github.com\/skomputer\/lilsis\/blob\/master\/app\/controllers\/lists_controller.rb\" target=\"_blank\"  rel=\"nofollow\" >someplace like here<\/a><\/li>\n<li>Can we do better?<\/li>\n<\/ul>\n<h2>Good React\/Flux Stack<\/h2>\n<ul>\n<li>Pretty sure I want to use some implementation of <a href=\"https:\/\/facebook.github.io\/flux\/\" target=\"_blank\"  rel=\"nofollow\" >Flux<\/a> along with it<\/li>\n<li><a href=\"https:\/\/github.com\/kriasoft\/react-starter-kit\/issues\/22\" target=\"_blank\"  rel=\"nofollow\" >This is a page with some lively debate<\/a> about which implementation of Flux is best<\/li>\n<li><a href=\"https:\/\/github.com\/kriasoft\/react-starter-kit\" target=\"_blank\"  rel=\"nofollow\" >This project<\/a> uses Flux along with 1,000 other bells and whistles (it is &#8220;a skeleton for an isomorphic web application (SPA) built with Facebook&#8217;s React.js library and powered by Flux architecture. It also uses Babel (ES6), JSX, Gulp, Webpack, BrowserSync, Jest, Flow&#8221;)<\/li>\n<\/ul>\n<p>So&#8230;<\/p>\n<ul>\n<li>What do all those tools do? Which ones do I actually need?<\/li>\n<li>Which implementation of Flux is best? Or (more nourishingly): what are a good set of criteria for deciding?<\/li>\n<\/ul>\n<h2>Contributing to Robospecs<\/h2>\n<ul>\n<li><a href=\"https:\/\/github.com\/jbrechtel\/robospecs\" target=\"_blank\"  rel=\"nofollow\" >This is Robospecs<\/a><\/li>\n<li>It&#8217;s a port of <a href=\"http:\/\/robolectric.org\/\" target=\"_blank\"  rel=\"nofollow\" >Robolectric<\/a> to <a href=\"https:\/\/etorreborre.github.io\/specs2\/\" target=\"_blank\"  rel=\"nofollow\" >Specs2<\/a><\/li>\n<li>It depends on Specs2 1.9 (and some years-old version of Robolectric?)<\/li>\n<li>The goal is to get up to working with Specs 3.6<\/li>\n<li><a href=\"https:\/\/github.com\/jbrechtel\/robospecs\/blob\/master\/src\/main\/scala\/RoboSpecs.scala\" target=\"_blank\"  rel=\"nofollow\" >This is the part<\/a> that the work<\/li>\n<li>What can I learn from this undertaking?\n<ul>\n<li>Can\/should I actually help? Just go along for the ride?<\/li>\n<li>How deep to dig into Specs2 and\/or what would be interesting to actually learn<\/li>\n<\/ul>\n<\/li>\n<\/ul>\n",
+    "parent": null,
+    "link": "http:\/\/dev.thelearningcollective.nyc\/austins-check-in-for-5-13-15\/",
+    "date": "2015-05-11T12:51:21",
+    "modified": "2015-05-11T12:51:21",
+    "format": "standard",
+    "slug": "austins-check-in-for-5-13-15",
+    "guid": "http:\/\/thelearningcollective.nyc\/?p=1465",
+    "excerpt": "<p>Did Last Week Littlesis Mostly shadowed Matthew on making a topics page about fracking on the proper LittleSis site. Good news: it&#8217;s done and we finished it fast! Bad news: we&#8217;ve got a ways to go in cleaning things up&hellip; <a href=\"http:\/\/dev.thelearningcollective.nyc\/austins-check-in-for-5-13-15\/\" class=\"more-link\">Continue Reading <span class=\"meta-nav\">&rarr;<\/span><\/a><\/p>\n",
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "date_tz": "Etc\/GMT-5",
+    "date_gmt": "2015-05-11T17:51:21",
+    "modified_tz": "Etc\/GMT-5",
+    "modified_gmt": "2015-05-11T17:51:21",
+    "meta": {
+      "links": {
+        "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1465",
+        "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2",
+        "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts",
+        "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1465\/comments",
+        "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1465\/revisions"
+      }
+    },
+    "featured_image": null,
+    "terms": {
+      "category": [
+        {
+          "ID": 1,
+          "name": "Check-ins",
+          "slug": "check-ins",
+          "description": "",
+          "taxonomy": "category",
+          "parent": null,
+          "count": 31,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/category\/check-ins\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms\/1"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": 1456,
+    "title": "You Are At Update 2",
+    "status": "publish",
+    "type": "post",
+    "author": {
+      "ID": 3,
+      "username": "ziggy",
+      "name": "Ziggy",
+      "first_name": "Ziggy",
+      "last_name": "",
+      "nickname": "ziggy",
+      "slug": "ziggy",
+      "URL": "",
+      "avatar": "http:\/\/0.gravatar.com\/avatar\/6d4408469ffe0e618d626433adce88f9?s=96",
+      "description": "",
+      "registered": "2015-03-18T07:01:00+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/3",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/3\/posts"
+        }
+      }
+    },
+    "content": "<h2><a href=\"https:\/\/github.com\/aepyornis\/you-are-at\" target=\"_blank\"  rel=\"nofollow\" >You Are \u24b6t<\/a> update part 2<\/h2>\n<h2>forget SQLite for now.<\/h2>\n<p>After exploring SQLite I realized it wasn&#8217;t quite the right tool for this job. I didn&#8217;t really need to an SQL query. There are two problems with using a relational database that make this data set challenging.<\/p>\n<p>Moreover, I think I want to use postgres\/postGIS for the geocoding service. There doesn&#8217;t appear to an updated <a href=\"http:\/\/www.gaia-gis.it\/gaia-sins\/\" target=\"_blank\"  rel=\"nofollow\" >spatialite<\/a> <a href=\"https:\/\/github.com\/zhm\/node-spatialite\" target=\"_blank\"  rel=\"nofollow\" >node module<\/a>, which would give me access to GIS functions in SQLite.<\/p>\n<p><a href=\"http:\/\/thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/ways.png\" target=\"_blank\"  rel=\"nofollow\" ><img src=\"http:\/\/thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/ways-300x142.png\" alt=\"ways\" width=\"300\" height=\"142\" class=\"alignnone size-medium wp-image-1458\" \/><\/a><br \/>\nMy diagram of the data. I want to find the shared nodes!<\/p>\n<p>1) The data is not structured that makes it easy to drop into SQL tables. Each <em>way<\/em> has a different number of tags and nodes, making it challenging to create a table schema. Perhaps MongoDB or a document-storage database would better fit the bill. I discovered <a href=\"http:\/\/lokijs.org\/\" target=\"_blank\"  rel=\"nofollow\" >loki<\/a> an in-memory javascript store which looks interesting. Open Street Map uses <a href=\"http:\/\/wiki.openstreetmap.org\/wiki\/Database\" target=\"_blank\"  rel=\"nofollow\" >postgres<\/a> to store the entire world&#8217;s data. They, of course, have quite a <a href=\"http:\/\/wiki.openstreetmap.org\/w\/images\/c\/cd\/RailsPortModels.png\" target=\"_blank\"  rel=\"nofollow\" >complicated schema<\/a> to make this work.<\/p>\n<p>2) Essentially my problem was not that I needed a database, but that I needed either more memory or to decrease my memory usage, because it works fine for small excerpts. Moreover, my script first included double loops (gotta watch that big O!), so I changed it to store the nodes and ways in objects with their IDs as keys.<\/p>\n<p>My strategy is to have two big objects ways and nodes. I first go through all the ways once and update the nodes with references to the ways, so I only have to do 2 loops.<\/p>\n<h2>Using objects (not arrays) or look up<\/h2>\n<pre class=\"prettyprint lang-javascript\"><code class=\"javascript\">\/\/loop through ways\n_.each(ways, function(way, wayID){\n  \/\/for each node associated with each way, add the wayID to wayRefs in that node\n  _.each(way.nd, function(node){\n    nodes[node.$.ref].wayRefs.push(wayID);\n  })\n})\n\/\/loop through nodes\n_.each(nodes, function(node, nodeID){\n  \/\/ if more than one way share this node\n  if (node.wayRefs.length &gt; 1) {\n    points.push(node);\n  }\n})\n<\/code><\/pre>\n<p>This works wonderfully for my small dataset. My tests pass with my sample data. However, when it came down to running it with my entire 1GB XML file, I still ran out of memory &#8212; even when I increase my memory to 6gb. Why does a 1gb XML file take over 5gb as a JavaScript object?<\/p>\n<p>I learned how to test memory usage with node using process.memoryUsage()<\/p>\n<p>I suppose I could split up my input. There&#8217;s no reason I <em>need<\/em> to process 1 large XML file instead of many small XML files. However, figuring out how to split the data is not the simplest. I would need to get multiple boundary boxes instead of a easy regional extract from Open Street Map. I wanted to be able to use the large file, so it would be easy to use this geocoder for any city.<\/p>\n<p>It&#8217;s true that my boundary box easily contains double the amount of data than I need, so instead of getting new boundary boxes I decide to evaluate the location of the data as I go. I generated a geojson file of NYC&#8217;s boundaries and used <a href=\"http:\/\/turfjs.org\/\" target=\"_blank\"  rel=\"nofollow\" >turf<\/a> to test if each node is in New York or not.<\/p>\n<pre class=\"prettyprint lang-javascript\"><code class=\"javascript\">\/\/ object, object -&gt; boolean\n\/\/ input: OSM-node, GeoJSON feature collection\nfunction inNYC(node, featrueCollection) {\nvar geoNode = turf.featurecollection([turf.point([node.$.lon, node.$.lat])]);\n\/\/ turf.within returns a features collection\n\/\/ if collection is not blank, return true, else return false\nif (turf.within(geoNode, featrueCollection).features.length &gt; 0) {\nreturn true;\n} else {\nreturn false;\n}\n<\/code><\/pre>\n<p>Another problem emerges now. The point-in-polygon function takes a lot of processing power and time. My tests runs more than 4x slower (475ms to 90 ms for 9 nodes). There are over 7 million nodes in my data. Without this extra function, it already took about 25 minutes&#8230;meaning I&#8217;m in it for a few hours and I&#8217;m not certain yet that it still won&#8217;t run out of memory. My tests become extra important because I want to be damn sure it does what I want it to do, otherwise I&#8217;d to wait 3 hours between every try.<\/p>\n<p>There might also be another solution would avoid having to keep both the nodes and ways in memory at the same time. It&#8217;s basically similar to my solution above, expect instead of looping through properties of an object I use Read Streams from the hard disk.<\/p>\n<ul>\n<li>Loop through ways (via a readStream) to get list of all node ids. Otherwise I&#8217;m keeping tract of lots of nodes that aren&#8217;t part of the ways I need.<\/li>\n<li>Loop through nodes, extract only the nodes that are in the above generated node id list.<\/li>\n<li>\/\/ at this point in-memory are only the nodes in the node ID list. Does garbage collection remove my object of node ids or might I have to do that explicitly?<\/li>\n<li>loop through ways again (via readStream) and attach way references to nodes.<\/li>\n<li>loop through nodes, extract only nodes that have 2 references (shared nodes)<\/li>\n<li>loop through ways again (via readStream) to get the rest of the information need to create my intersection-point.<\/li>\n<li>save points to file or DB.<\/li>\n<\/ul>\n<p>It is cool that I can keep using my same tests but keep trying out different implementation strategies to test for memory usage and time.<\/p>\n<p>So thoughts: Should I go with this 3+ hour long script? Would my read stream solution work better? Should I use a database? Am I making this problem too complicated?<\/p>\n",
+    "parent": null,
+    "link": "http:\/\/dev.thelearningcollective.nyc\/you-are-at-update-2\/",
+    "date": "2015-05-11T10:31:00",
+    "modified": "2015-06-04T20:35:08",
+    "format": "standard",
+    "slug": "you-are-at-update-2",
+    "guid": "http:\/\/thelearningcollective.nyc\/?p=1456",
+    "excerpt": "<p>You Are \u24b6t update part 2 forget SQLite for now. After exploring SQLite I realized it wasn&#8217;t quite the right tool for this job. I didn&#8217;t really need to an SQL query. There are two problems with using a relational&hellip; <a href=\"http:\/\/dev.thelearningcollective.nyc\/you-are-at-update-2\/\" class=\"more-link\">Continue Reading <span class=\"meta-nav\">&rarr;<\/span><\/a><\/p>\n",
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "date_tz": "Etc\/GMT-5",
+    "date_gmt": "2015-05-11T15:31:00",
+    "modified_tz": "Etc\/GMT-5",
+    "modified_gmt": "2015-06-05T01:35:08",
+    "meta": {
+      "links": {
+        "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1456",
+        "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/3",
+        "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts",
+        "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1456\/comments",
+        "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1456\/revisions"
+      }
+    },
+    "featured_image": {
+      "ID": 1563,
+      "title": "ways",
+      "status": "inherit",
+      "type": "attachment",
+      "author": {
+        "ID": 1,
+        "username": "misfist",
+        "name": "Pea",
+        "first_name": "",
+        "last_name": "",
+        "nickname": "Pea",
+        "slug": "misfist",
+        "URL": "",
+        "avatar": "http:\/\/1.gravatar.com\/avatar\/4c88de43757cff8eeed24564f5729541?s=96",
+        "description": "",
+        "registered": "2015-03-18T04:54:16+00:00",
+        "meta": {
+          "links": {
+            "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+            "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1\/posts"
+          }
+        }
+      },
+      "content": "<p class=\"attachment\"><a href='http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/ways.png'><img width=\"300\" height=\"142\" src=\"http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/ways-300x142.png\" class=\"attachment-medium\" alt=\"ways\" \/><\/a><\/p>\n",
+      "parent": 1456,
+      "link": "http:\/\/dev.thelearningcollective.nyc\/you-are-at-update-2\/ways\/#main",
+      "date": "2015-06-04T20:35:02",
+      "modified": "2015-06-04T20:35:02",
+      "format": "standard",
+      "slug": "ways",
+      "guid": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/ways.png",
+      "excerpt": null,
+      "menu_order": 0,
+      "comment_status": "open",
+      "ping_status": "closed",
+      "sticky": false,
+      "date_tz": "Etc\/GMT-5",
+      "date_gmt": "2015-06-05T01:35:02",
+      "modified_tz": "Etc\/GMT-5",
+      "modified_gmt": "2015-06-05T01:35:02",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/media\/1563",
+          "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+          "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/media",
+          "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/media\/1563\/comments",
+          "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/media\/1563\/revisions",
+          "up": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/media\/1456"
+        }
+      },
+      "terms": [
+        
+      ],
+      "source": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/ways.png",
+      "is_image": true,
+      "attachment_meta": {
+        "width": 375,
+        "height": 177,
+        "file": "2015\/05\/ways.png",
+        "sizes": {
+          "thumbnail": {
+            "file": "ways-150x150.png",
+            "width": 150,
+            "height": 150,
+            "mime-type": "image\/png",
+            "url": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/ways-150x150.png"
+          },
+          "medium": {
+            "file": "ways-300x142.png",
+            "width": 300,
+            "height": 142,
+            "mime-type": "image\/png",
+            "url": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/ways-300x142.png"
+          },
+          "thumb-small": {
+            "file": "ways-50x50.png",
+            "width": 50,
+            "height": 50,
+            "mime-type": "image\/png",
+            "url": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/ways-50x50.png"
+          },
+          "thumb-medium": {
+            "file": "ways-300x135.png",
+            "width": 300,
+            "height": 135,
+            "mime-type": "image\/png",
+            "url": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/ways-300x135.png"
+          },
+          "thumb-featured": {
+            "file": "ways-250x175.png",
+            "width": 250,
+            "height": 175,
+            "mime-type": "image\/png",
+            "url": "http:\/\/dev.thelearningcollective.nyc\/wp-content\/uploads\/2015\/05\/ways-250x175.png"
+          }
+        },
+        "image_meta": {
+          "aperture": 0,
+          "credit": "",
+          "camera": "",
+          "caption": "",
+          "created_timestamp": 0,
+          "copyright": "",
+          "focal_length": 0,
+          "iso": 0,
+          "shutter_speed": 0,
+          "title": "",
+          "orientation": 0
+        }
+      }
+    },
+    "terms": {
+      "category": [
+        {
+          "ID": 32,
+          "name": "Blog",
+          "slug": "blogpost",
+          "description": "",
+          "taxonomy": "category",
+          "parent": null,
+          "count": 5,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/category\/blogpost\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms\/32"
+            }
+          }
+        }
+      ],
+      "post_tag": [
+        {
+          "ID": 3,
+          "name": "Javascript",
+          "slug": "javascript",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 14,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/javascript\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/3"
+            }
+          }
+        },
+        {
+          "ID": 42,
+          "name": "memory",
+          "slug": "memory",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 2,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/memory\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/42"
+            }
+          }
+        },
+        {
+          "ID": 5,
+          "name": "Node.js",
+          "slug": "node-js",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 4,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/node-js\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/5"
+            }
+          }
+        },
+        {
+          "ID": 44,
+          "name": "streams",
+          "slug": "streams",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 1,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/streams\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/44"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": 1444,
+    "title": "You Are At update: memory issues and Open Street Map files",
+    "status": "publish",
+    "type": "post",
+    "author": {
+      "ID": 3,
+      "username": "ziggy",
+      "name": "Ziggy",
+      "first_name": "Ziggy",
+      "last_name": "",
+      "nickname": "ziggy",
+      "slug": "ziggy",
+      "URL": "",
+      "avatar": "http:\/\/0.gravatar.com\/avatar\/6d4408469ffe0e618d626433adce88f9?s=96",
+      "description": "",
+      "registered": "2015-03-18T07:01:00+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/3",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/3\/posts"
+        }
+      }
+    },
+    "content": "<h1>You Are \u24b6t update part 1<\/h1>\n<h2>Context:<\/h2>\n<p>I&#8217;m creating a simple reverse geocoder that takes lat\/lngs from a phone and returns the closest street intersection.<\/p>\n<h2>Memory issues<\/h2>\n<p>The first step for my geocoder was distilling <a href=\"https:\/\/www.openstreetmap.org\/\" target=\"_blank\"  rel=\"nofollow\" >Open Street Map<\/a> to have only the points for the street crossings. I used a plugin for QGIS to get the .osm file for nyc. It clocked in at about 1GB. &#8216;.osm&#8217; files are just XML, so instead of doing using &#8216;fancy&#8217; GIS overlay tools, I decided to parse the XML and search through it in javascript.<\/p>\n<p>I used this <a href=\"https:\/\/github.com\/Leonidas-from-XIV\/node-xml2js\" target=\"_blank\"  rel=\"nofollow\" >XML parsing library<\/a> to parse the xml, which worked perfectly for my sample data.<\/p>\n<pre class=\"prettyprint lang-javascript\"><code class=\"javascript\">fs.readFile('data\/nyc.osm', function(err, data){\n  if (err) {\n    console.log(err);\n  } else {\n    parser.parseString(data, function(err, result){\n      if (err) {\n        console.log(err);\n      } else {\n          var x = result; \/\/ do something with object. \n          console.log('parsed');\n       };\n    });\n  }\n});\n<\/code><\/pre>\n<p>But when I tried to parse the large file I got this error:<\/p>\n<pre><code># Fatal error in d:jenkinsworkspacenodejs-msi-juliend8c2e2bbdepsv8src\/handles.h, line 48\n# CHECK(location_ != NULL) failed\n<\/code><\/pre>\n<p>I couldn&#8217;t find much information about that message. <a href=\"https:\/\/en.wikipedia.org\/wiki\/Jenkins_%28software%29\" target=\"_blank\"  rel=\"nofollow\" >Jenkins<\/a> is a &#8220;continuous integration tool&#8221;, whose wikipedia page did not get me any closer to understanding the error message or my goal. Anyways, I was pretty sure it had to too with memory, so I tried to use <a href=\"https:\/\/iojs.org\/\" target=\"_blank\"  rel=\"nofollow\" >iojs<\/a> to see if I get a different error and sure enough:<\/p>\n<pre><code>FATAL ERROR: invalid array length Allocation failed - process out of memory\n<\/code><\/pre>\n<p>According to the <a href=\"https:\/\/github.com\/joyent\/node\/wiki\/FAQ\" target=\"_blank\"  rel=\"nofollow\" >node docs<\/a>:<\/p>\n<p>&#8220;What is the memory limit on a node process?<\/p>\n<p>Currently, by default v8 has a memory limit of 512mb on 32-bit systems, and 1gb on 64-bit systems. The limit can be raised by setting &#8211;max_old_space_size to a maximum of ~1024 (~1 GiB) (32-bit) and ~1741 (~1.7GiB) (64-bit), but it is recommended that you split your single process into several workers if you are hitting memory limits.&#8221;<\/p>\n<p>I tried &#8211;max_old_space_size to no avail. Some StackOverFlow research seems to indicate that node has a limit (see <a href=\"https:\/\/github.com\/v8\/v8\/blob\/c8bf5c35e431d4029e084024501863a4cf907882\/src\/objects.h#L4647-L4648\" target=\"_blank\"  rel=\"nofollow\" >this<\/a>) of 1GB per array. I suppose I could modify node and build it myself &#8230;but that doesn&#8217;t sound like fun&#8230;.<\/p>\n<h2>streams?<\/h2>\n<p>Streams, which ya&#8217;ll know I think are awesome, is the next tool I reach for. I could use streams to parse the XML file and I have a few library choices:<br \/>\n  * <a href=\"https:\/\/github.com\/assistunion\/xml-stream\" target=\"_blank\"  rel=\"nofollow\" >xml-stream<\/a><br \/>\n  * <a href=\"https:\/\/github.com\/robrighter\/node-xml\" target=\"_blank\"  rel=\"nofollow\" >node-xml<\/a><br \/>\n  * Javasript xml parsers seem to rely primary on these two parsers:<br \/>\n    * <a href=\"https:\/\/github.com\/node-xmpp\/node-expat\" target=\"_blank\"  rel=\"nofollow\" >node-expat<\/a><br \/>\n    * <a href=\"https:\/\/github.com\/isaacs\/sax-js\" target=\"_blank\"  rel=\"nofollow\" >sax-js<\/a><\/p>\n<p>However, after I use stream to parse the XML, I need to be able to search through the data, which would still require the arrays to be in memory. I could utilize read-streams to search while keeping all the data mostly on the disk, but that doesn&#8217;t seem like the best option somehow.<\/p>\n<h2>Enter a database<\/h2>\n<p>We&#8217;ve discussed that one shouldn&#8217;t bother with a DB if you can accomplish the task in memory. Since I can&#8217;t seem to come up with a good solution with memory, I decide to switch to using a database. But in that same spirit, I thought I&#8217;d take a crack at using SQLite since it&#8217;s the easiest and simplest database I know of and it doesn&#8217;t require a server process.<\/p>\n<p>Additionally, the major <a href=\"https:\/\/github.com\/mapbox\/node-sqlite3\" target=\"_blank\"  rel=\"nofollow\" >node sqlite library<\/a> is created by mapbox and used by a lot of mapping programs, so there&#8217;s plenty of value for me to learning it.<\/p>\n<h2>Next steps \/ structure of program<\/h2>\n<p>1) osm_parse -> Stream XML file and output object stream. there are two types of elements in the XML that take up huge amount of space: nodes &amp; ways.<br \/>\n2) db_insert -> takes object stream and writes to in-memory (or file) SQLite DB.<br \/>\n3) db_search -> searches DB for matches -> writes results to file (or DB).<\/p>\n<p>It also occurred to me that it might make sense to use SQLite in-memory instead of postgres for the final geocoder? We&#8217;ll experiment later&#8230;<\/p>\n",
+    "parent": null,
+    "link": "http:\/\/dev.thelearningcollective.nyc\/you-are-at-update-memory-issues-and-open-street-map-files\/",
+    "date": "2015-05-07T17:00:12",
+    "modified": "2015-05-07T17:00:12",
+    "format": "standard",
+    "slug": "you-are-at-update-memory-issues-and-open-street-map-files",
+    "guid": "http:\/\/thelearningcollective.nyc\/?p=1444",
+    "excerpt": "<p>You Are \u24b6t update part 1 Context: I&#8217;m creating a simple reverse geocoder that takes lat\/lngs from a phone and returns the closest street intersection. Memory issues The first step for my geocoder was distilling Open Street Map to have&hellip; <a href=\"http:\/\/dev.thelearningcollective.nyc\/you-are-at-update-memory-issues-and-open-street-map-files\/\" class=\"more-link\">Continue Reading <span class=\"meta-nav\">&rarr;<\/span><\/a><\/p>\n",
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "date_tz": "Etc\/GMT-5",
+    "date_gmt": "2015-05-07T22:00:12",
+    "modified_tz": "Etc\/GMT-5",
+    "modified_gmt": "2015-05-07T22:00:12",
+    "meta": {
+      "links": {
+        "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1444",
+        "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/3",
+        "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts",
+        "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1444\/comments",
+        "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1444\/revisions"
+      }
+    },
+    "featured_image": null,
+    "terms": {
+      "category": [
+        {
+          "ID": 32,
+          "name": "Blog",
+          "slug": "blogpost",
+          "description": "",
+          "taxonomy": "category",
+          "parent": null,
+          "count": 5,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/category\/blogpost\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms\/32"
+            }
+          }
+        }
+      ],
+      "post_tag": [
+        {
+          "ID": 3,
+          "name": "Javascript",
+          "slug": "javascript",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 14,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/javascript\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/3"
+            }
+          }
+        },
+        {
+          "ID": 22,
+          "name": "mapping",
+          "slug": "mapping",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 2,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/mapping\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/22"
+            }
+          }
+        },
+        {
+          "ID": 42,
+          "name": "memory",
+          "slug": "memory",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 2,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/memory\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/42"
+            }
+          }
+        },
+        {
+          "ID": 5,
+          "name": "Node.js",
+          "slug": "node-js",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 4,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/node-js\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/5"
+            }
+          }
+        },
+        {
+          "ID": 43,
+          "name": "SQLite",
+          "slug": "sqlite",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 1,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/sqlite\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/43"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "ID": 1435,
+    "title": "Pea&#8217;s Check-in for 5\/5\/2015 &#8211; Higher-order Functions",
+    "status": "publish",
+    "type": "post",
+    "author": {
+      "ID": 1,
+      "username": "misfist",
+      "name": "Pea",
+      "first_name": "",
+      "last_name": "",
+      "nickname": "Pea",
+      "slug": "misfist",
+      "URL": "",
+      "avatar": "http:\/\/1.gravatar.com\/avatar\/4c88de43757cff8eeed24564f5729541?s=96",
+      "description": "",
+      "registered": "2015-03-18T04:54:16+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1\/posts"
+        }
+      }
+    },
+    "content": "<h2>What I did<\/h2>\n<p>This week, I&#8217;ve gone back to the basics. Trying to get greater foundational understanding of JavaScript (maybe even programming concepts more generally).<\/p>\n<h2>What I learned<\/h2>\n<h3>Higher-order Functions<\/h3>\n<p>I find these difficult to follow. Definitely how my mind is used to thinking about things.<\/p>\n<p>I was asked to go through every exercise and substitute variables and statements to make it easier to understand. While doing this was time-consuming and tedious, it really did help me understand.<\/p>\n<pre><code>function forEach(array, action) {\n  for (var i = 0; i &lt; array.length; i++)\n    action(array[i]);\n}\n<\/code><\/pre>\n<p><strong>Invoking <code>forEach()<\/code><\/strong><\/p>\n<pre><code>forEach([\"Wampeter\", \"Foma\", \"Granfalloon\"], console.log);\n<\/code><\/pre>\n<p><strong>Equivalent to<\/strong><\/p>\n<pre><code>for (var i = 0; i &lt; [\"Wampeter\", \"Foma\", \"Granfalloon\"].length; i++) {\n  console.log([\"Wampeter\", \"Foma\", \"Granfalloon\"][i]);\n}\n<\/code><\/pre>\n<p><strong>Invoking <code>forEach()<\/code><\/strong><\/p>\n<pre><code>var numbers = [1, 2, 3, 4, 5];\nvar sum = 0;\nforEach(numbers, function(number) {\n    sum += number;\n});\nconsole.log(sum);\n<\/code><\/pre>\n<p><strong>Equivalent to<\/strong><\/p>\n<pre><code>var sum = 0;\nfor(var i = 0; i &lt; [1, 2, 3, 4, 5].length; i++) {\n    sum += [1, 2, 3, 4, 5][i];\n}\nconsole.log(sum);\n<\/code><\/pre>\n<h4>Functions that invoke another function<\/h4>\n<p><strong>Example 1<\/strong><\/p>\n<pre><code>function greaterThan(n) {\n  return function(m) { return m &gt; n; };\n}\nvar greaterThan10 = greaterThan(10);\nconsole.log(greaterThan10(11));\n<\/code><\/pre>\n<p><strong>Equivalent to<\/strong><\/p>\n<pre><code>var greaterThan10 = function(m) {\n    return m &gt; 10;\n}\nconsole.log( 11 &gt; 10 );\n<\/code><\/pre>\n<p><strong>Example 2<\/strong><\/p>\n<pre><code>function noisy(f) {\n  \/\/console.log(f);\n  return function(arg) {\n    \/\/console.log(\"calling with\", arg);\n    var val = f(arg);\n    \/\/console.log(\"called with\", arg, \"- got\", val);\n    return val;\n  };\n}\nnoisy(Boolean)(0);\n<\/code><\/pre>\n<p><strong>Equivalent to<\/strong><\/p>\n<pre><code>var val = function(number) {\n  return Boolean(number);\n}\n\nconsole.log(val(1));\n<\/code><\/pre>\n<h4>Control Flow<\/h4>\n<pre><code>function unless(test, then) {\n  if (!test) then();\n}\nfunction repeat(times, body) {\n  for (var i = 0; i &lt; times; i++) body(i);\n}\n\nrepeat(3, function(n) {\n  unless(n % 2, function() {\n    console.log(n, \"is even\");\n  });\n});\n<\/code><\/pre>\n<p><strong>Equivalent to<\/strong><\/p>\n<pre><code>for (var i = 0; i &lt; 3; i++) {\n  if(!(i % 2)) {\n    console.log(i, 'is even');\n  }\n}\n<\/code><\/pre>\n<h4>Filtering<\/h4>\n<p>Note: I had some difficulty accessing a local JSON data file and using JSON.parse() to work with it. In order to not lose too much focus, I just used an array object in my file. But, I&#8217;d like to figure this out in the future.<\/p>\n<p>Data source: <a href=\"http:\/\/eloquentjavascript.net\/code\/ancestry.js\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/eloquentjavascript.net\/code\/ancestry.js<\/a><\/p>\n<pre><code>\/\/Data\n\nvar ancestry = [\n    {\n        name: \"Carolus Haverbeke\",\n        sex: \"m\",\n        born: 1832,\n        died: 1905,\n        father: \"Carel Haverbeke\",\n        mother: \"Maria van Brussel\"\n    },\n    {\n        name: \"Emma de Milliano\",\n        sex: \"f\",\n        born: 1876,\n        died: 1956,\n        father: \"Petrus de Milliano\",\n        mother: \"Sophia van Damme\"\n    },\n    {\n        name: \"Maria de Rycke\",\n        sex: \"f\",\n        born: 1683,\n        died: 1724,\n        father: \"Frederik de Rycke\",\n        mother: \"Laurentia van Vlaenderen\"\n    },\n];\n\n\/\/Custom filter function \n\nfunction filter(array, test) {\n  var passed = [];\n  for (var i = 0; i &lt; array.length; i++) {\n    if (test(array[i]))\n      passed.push(array[i]);\n  }\n  return passed;\n}\n\nconsole.log(filter(ancestry, function(person) {\n  return person.born &gt; 1900 &amp;&amp; person.born &lt; 1925;\n}));\n<\/code><\/pre>\n<p><strong>Equivalent to<\/strong><\/p>\n<pre><code>var passed = [];\nfor(var i = 0; i &lt; ancestry.length; i++) {\n\n  if(ancestry[i].born &gt; 1900 &amp;&amp; ancestry[i].born &lt; 1925) {\n    passed.push(ancestry[i]);\n  }\n}\n\nconsole.log(passed);\n<\/code><\/pre>\n<p><strong>Built-in JS Methods<\/strong><\/p>\n<p>The previous could have been accomplished using a built-in JS method called <code>filter()<\/code>&#8230;<\/p>\n<pre><code>console.log(ancestry.filter(function(person) {\n  return person.born &gt; 1900 &amp;&amp; person.born &lt; 1925;\n}));\n<\/code><\/pre>\n<p><strong><code>map()<\/code><\/strong><\/p>\n<pre><code>console.log(ancestry.map(function(person) {\n  return person.name;\n})\n<\/code><\/pre>\n<p><strong><code>reduce()<\/code><\/strong><\/p>\n<pre><code>console.log(array.reduce(function(a, b) {\n  return a + b;\n})\n);\n<\/code><\/pre>\n<h4>Reduce<\/h4>\n<p>I find this a bit confusing. Not fully understanding of how it works or how\/when you&#8217;d use it.<\/p>\n<pre><code>\/\/ Custom reduce function\n\nfunction reduce(array, combine, start) {\n  var current = start;\n  for (var i = 0; i &lt; array.length; i++) {\n    current = combine(current, array[i]);\n  }\n  return current;\n}\n<\/code><\/pre>\n<p><strong>Equivalent to<\/strong><\/p>\n<pre><code>var array = [1, 2, 3, 4];\n\nvar current = 0;\n\nfor(var i = 0; i &lt; array.length; i++) {\n  current = current + array[i];\n}\n<\/code><\/pre>\n<h4>Composition<\/h4>\n<pre><code>function average(array) {\n  function plus(a, b) { return a + b; }\n  return array.reduce(plus) \/ array.length;\n}\nfunction age(p) { return p.died - p.born; }\nfunction male(p) { return p.sex == \"m\"; }\nfunction female(p) { return p.sex == \"f\"; }\n\nconsole.log(average(ancestry.filter(male).map(age)));\nconsole.log(average(ancestry.filter(female).map(age)));\n<\/code><\/pre>\n<p><strong>Equivalent to<\/strong><\/p>\n<pre><code>function average(array) {\n  return array.reduce(function(a, b) {\n    return a + b;\n  }) \/ array.length;\n}\n\nvar femaleArray = ancestry.filter(function(person) {\n  return person.sex == \"f\";\n}).map(function(person) {\n  return person.died - person.born;\n});\n\nvar maleArray = ancestry.filter(function(person) {\n  return person.sex == \"m\";\n}).map(function(person) {\n  return person.died - person.born;\n});\n\nconsole.log(average(femaleArray));\nconsole.log(average(maleArray));\n<\/code><\/pre>\n<h2>Next Up<\/h2>\n<ul>\n<li><a href=\"http:\/\/eloquentjavascript.net\/05_higher_order.html#p_Typ91CWfYn\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/eloquentjavascript.net\/05_higher_order.html#p_Typ91CWfYn<\/a><\/li>\n<li><a href=\"http:\/\/kadamwhite.github.io\/talks\/2014\/backbone-wordpress-wpsessions\/#\/\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/kadamwhite.github.io\/talks\/2014\/backbone-wordpress-wpsessions\/#\/<\/a><\/li>\n<\/ul>\n<h2>Interesting Mapping Example<\/h2>\n<p><a href=\"http:\/\/www.nytimes.com\/interactive\/2015\/05\/03\/upshot\/the-best-and-worst-places-to-grow-up-how-your-area-compares.html\" target=\"_blank\"  rel=\"nofollow\" >http:\/\/www.nytimes.com\/interactive\/2015\/05\/03\/upshot\/the-best-and-worst-places-to-grow-up-how-your-area-compares.html<\/a><\/p>\n",
+    "parent": null,
+    "link": "http:\/\/dev.thelearningcollective.nyc\/peas-check-in-for-552015-higher-order-functions\/",
+    "date": "2015-05-04T13:43:50",
+    "modified": "2015-05-04T13:43:50",
+    "format": "standard",
+    "slug": "peas-check-in-for-552015-higher-order-functions",
+    "guid": "http:\/\/thelearningcollective.nyc\/?p=1435",
+    "excerpt": "<p>What I did This week, I&#8217;ve gone back to the basics. Trying to get greater foundational understanding of JavaScript (maybe even programming concepts more generally). What I learned Higher-order Functions I find these difficult to follow. Definitely how my mind&hellip; <a href=\"http:\/\/dev.thelearningcollective.nyc\/peas-check-in-for-552015-higher-order-functions\/\" class=\"more-link\">Continue Reading <span class=\"meta-nav\">&rarr;<\/span><\/a><\/p>\n",
+    "menu_order": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "date_tz": "Etc\/GMT-5",
+    "date_gmt": "2015-05-04T18:43:50",
+    "modified_tz": "Etc\/GMT-5",
+    "modified_gmt": "2015-05-04T18:43:50",
+    "meta": {
+      "links": {
+        "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1435",
+        "author": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+        "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts",
+        "replies": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1435\/comments",
+        "version-history": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/posts\/1435\/revisions"
+      }
+    },
+    "featured_image": null,
+    "terms": {
+      "category": [
+        {
+          "ID": 1,
+          "name": "Check-ins",
+          "slug": "check-ins",
+          "description": "",
+          "taxonomy": "category",
+          "parent": null,
+          "count": 31,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/category\/check-ins\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/category\/terms\/1"
+            }
+          }
+        }
+      ],
+      "post_tag": [
+        {
+          "ID": 41,
+          "name": "higher-order functions",
+          "slug": "higher-order-functions",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 2,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/higher-order-functions\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/41"
+            }
+          }
+        },
+        {
+          "ID": 3,
+          "name": "Javascript",
+          "slug": "javascript",
+          "description": "",
+          "taxonomy": "post_tag",
+          "parent": null,
+          "count": 14,
+          "link": "http:\/\/dev.thelearningcollective.nyc\/tag\/javascript\/",
+          "meta": {
+            "links": {
+              "collection": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms",
+              "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/taxonomies\/post_tag\/terms\/3"
+            }
+          }
+        }
+      ]
+    }
+  }
+]
+
