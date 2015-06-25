@@ -1,7 +1,26 @@
 [
   {
+    "ID": 1,
     "title": "Test Post 1",
-    "author": null,
+    "author": {
+      "ID": 2,
+      "username": "austin",
+      "name": "Austin",
+      "first_name": "Austin",
+      "last_name": "",
+      "nickname": "austin",
+      "slug": "austin",
+      "URL": "",
+      "avatar": "http:\/\/1.gravatar.com\/avatar\/4aa3e7801814bc5ed3a625cd82d6c3ac?s=96",
+      "description": "",
+      "registered": "2015-03-18T07:00:13+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2\/posts"
+        }
+      }
+    },
     "date": "Thu Jun 04 2015 20:39:27 GMT-0400 (EDT)",
     "link": null,
     "content": "Lorem ipsum test content...",
@@ -11,8 +30,27 @@
     "type": "post"
   },
   {
-    "title": "Test Post 2",
-    "author": "misfist",
+  "ID": 2,
+   "title": "Test Post 2",
+    "author": {
+      "ID": 1,
+      "username": "misfist",
+      "name": "Pea",
+      "first_name": "",
+      "last_name": "",
+      "nickname": "Pea",
+      "slug": "misfist",
+      "URL": "",
+      "avatar": "http:\/\/1.gravatar.com\/avatar\/4c88de43757cff8eeed24564f5729541?s=96",
+      "description": "",
+      "registered": "2015-03-18T04:54:16+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/1\/posts"
+        }
+      }
+    },
     "date": "Thu Jun 04 2015 20:39:27 GMT-0400 (EDT)",
     "link": null,
     "content": "Lorem ipsum test content...",
@@ -22,8 +60,27 @@
     "type": "post"
   },
   {
-    "title": "Test Post 1",
-    "author": "austin",
+    "ID": 3,
+    "title": "Test Post 3",
+    "author": {
+      "ID": 2,
+      "username": "austin",
+      "name": "Austin",
+      "first_name": "Austin",
+      "last_name": "",
+      "nickname": "austin",
+      "slug": "austin",
+      "URL": "",
+      "avatar": "http:\/\/1.gravatar.com\/avatar\/4aa3e7801814bc5ed3a625cd82d6c3ac?s=96",
+      "description": "",
+      "registered": "2015-03-18T07:00:13+00:00",
+      "meta": {
+        "links": {
+          "self": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2",
+          "archives": "http:\/\/dev.thelearningcollective.nyc\/wp-json\/users\/2\/posts"
+        }
+      }
+    },
     "date": "Thu Jun 04 2015 20:39:27 GMT-0400 (EDT)",
     "link": null,
     "content": "Lorem ipsum test content...",

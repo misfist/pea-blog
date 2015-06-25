@@ -15,7 +15,7 @@
     <link href="/lib/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/lib/css/blog-home.css" rel="stylesheet">
+    <link href="/lib/css/style.css" rel="stylesheet">
   
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,7 +43,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Pea Blog</a>
+                <a class="navbar-brand" href="/">Pea Blog</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -74,7 +74,7 @@
                     <small>An Experimental Blog Using Backbone.js</small>
                 </h1>
 
-                <!-- First Blog Post -->
+                <!-- Content  -->
                 <section id="main">
                   
                   Loading...
@@ -176,13 +176,13 @@
     <!-- Template -->
     <!-- ========= -->
 
-    <script type="text/template" id="postTemplate">
+    <script type="text/template" id="postListItem">
       <header class="post-header">
         <h2 class="post-title">
-          <a href="<%= link %>"><%= title %></a>
+          <a href="/#posts/<%= ID %>" data-id="<%= ID %>" class="post-link"><%= title %></a>
         </h2>
         <div class="post-meta">
-          <p class="lead post-meta">by <a href="#"><%= author.name %></a></p>
+          <p class="lead post-meta">by <a href="#" class="post-author"><%= author.name %></a></p>
           <span class="glyphicon glyphicon-time"></span> Posted on <time><% print ( new Date(date) ) %></time>
         </div>
         <hr>
@@ -191,7 +191,26 @@
       </header>  
       <div class="post-body">
         <p class="post-excerpt"><%= excerpt %></p>
-        <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+        <a class="btn btn-primary post-link" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+      <footer class="post-footer"><hr></footer>
+    </script>
+
+    <script type="text/template" id="postDetail">
+      <header class="post-header">
+        <h2 class="post-title">
+          <%= title %>
+        </h2>
+        <div class="post-meta">
+          <p class="lead post-meta">by <%= author.name %></p>
+          <span class="glyphicon glyphicon-time"></span> Posted on <time><% print ( new Date(date) ) %></time>
+        </div>
+        <hr>
+        <div class="post-thumbnail"><img class="img-responsive" src="http://placehold.it/900x300" alt=""></div>
+        <hr>
+      </header>  
+      <div class="post-body">
+        <p class="post-content"><%= content %></p>
       </div>
       <footer class="post-footer"><hr></footer>
    </script>
